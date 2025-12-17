@@ -1,0 +1,401 @@
+Batch ID,Timestamp,Temperature (C),pH Level,Absorbance (OD),Control Limit,Specification Limit,Control Status,Spec Status,Risk Score,Anomaly Detected
+IN-001,11/1/2025 0:00,37.25,7.39,1.232,in_control,in_spec,In Control,In Spec,0.26,FALSE
+IN-002,11/1/2025 2:00,37.76,7.38,1.188,in_control,in_spec,In Control,In Spec,0.78,FALSE
+IN-003,11/1/2025 4:00,37.79,7.48,1.177,in_control,in_spec,In Control,In Spec,0.87,FALSE
+IN-004,11/1/2025 6:00,37.27,7.35,1.177,in_control,in_spec,In Control,In Spec,0.32,FALSE
+IN-005,11/1/2025 8:00,37.12,7.21,1.114,in_control,in_spec,In Control,In Spec,0.31,FALSE
+IN-006,11/1/2025 10:00,36.72,7.3,1.216,in_control,in_spec,In Control,In Spec,0.38,FALSE
+IN-007,11/1/2025 12:00,36.55,7.26,1.273,in_control,in_spec,In Control,In Spec,0.6,FALSE
+IN-008,11/1/2025 14:00,36.89,7.41,1.129,in_control,in_spec,In Control,In Spec,0.12,FALSE
+IN-009,11/1/2025 16:00,36.73,7.41,1.142,in_control,in_spec,In Control,In Spec,0.28,FALSE
+IN-010,11/1/2025 18:00,37.19,7.34,1.185,in_control,in_spec,In Control,In Spec,0.25,FALSE
+IN-011,11/1/2025 20:00,36.7,7.59,1.199,in_control,in_spec,In Control,In Spec,0.49,FALSE
+IN-012,11/1/2025 22:00,36.47,7.48,1.139,in_control,in_spec,In Control,In Spec,0.61,FALSE
+IN-013,11/2/2025 0:00,37.1,7.2,1.134,in_control,in_spec,In Control,In Spec,0.3,FALSE
+IN-014,11/2/2025 2:00,37.1,7.47,1.209,in_control,in_spec,In Control,In Spec,0.17,FALSE
+IN-015,11/2/2025 4:00,36.94,7.37,1.126,in_control,in_spec,In Control,In Spec,0.09,FALSE
+IN-016,11/2/2025 6:00,36.64,7.35,1.253,in_control,in_spec,In Control,In Spec,0.41,FALSE
+IN-017,11/2/2025 8:00,37.17,7.22,1.216,in_control,in_spec,In Control,In Spec,0.35,FALSE
+IN-018,11/2/2025 10:00,36.81,7.33,1.231,in_control,in_spec,In Control,In Spec,0.26,FALSE
+IN-019,11/2/2025 12:00,37.52,7.49,1.158,in_control,in_spec,In Control,In Spec,0.61,FALSE
+IN-020,11/2/2025 14:00,36.85,7.43,1.249,in_control,in_spec,In Control,In Spec,0.19,FALSE
+IN-021,11/2/2025 16:00,36.76,7.38,1.145,in_control,in_spec,In Control,In Spec,0.26,FALSE
+IN-022,11/2/2025 18:00,36.4,7.48,1.268,in_control,in_spec,In Control,In Spec,0.68,FALSE
+IN-023,11/2/2025 20:00,36.96,7.5,1.218,in_control,in_spec,In Control,In Spec,0.14,FALSE
+IN-024,11/2/2025 22:00,36.68,7.44,1.277,in_control,in_spec,In Control,In Spec,0.36,FALSE
+IN-025,11/3/2025 0:00,36.98,7.56,1.069,in_control,in_spec,In Control,In Spec,0.17,FALSE
+IN-026,11/3/2025 2:00,37.41,7.41,1.185,in_control,in_spec,In Control,In Spec,0.42,FALSE
+IN-027,11/3/2025 4:00,37.05,7.2,1.189,in_control,in_spec,In Control,In Spec,0.24,FALSE
+IN-028,11/3/2025 6:00,37.18,7.55,1.174,in_control,in_spec,In Control,In Spec,0.33,FALSE
+IN-029,11/3/2025 8:00,36.6,7.35,1.246,in_control,in_spec,In Control,In Spec,0.45,FALSE
+IN-030,11/3/2025 10:00,37.16,7.35,1.226,in_control,in_spec,In Control,In Spec,0.22,FALSE
+IN-031,11/3/2025 12:00,37.05,7.5,1.165,in_control,in_spec,In Control,In Spec,0.15,FALSE
+IN-032,11/3/2025 14:00,36.84,7.36,1.127,in_control,in_spec,In Control,In Spec,0.2,FALSE
+IN-033,11/3/2025 16:00,37.15,7.43,1.2,in_control,in_spec,In Control,In Spec,0.17,FALSE
+IN-034,11/3/2025 18:00,36.88,7.26,1.179,in_control,in_spec,In Control,In Spec,0.26,FALSE
+IN-035,11/3/2025 20:00,36.83,7.32,1.192,in_control,in_spec,In Control,In Spec,0.25,FALSE
+IN-036,11/3/2025 22:00,37.2,7.59,1.209,in_control,in_spec,In Control,In Spec,0.39,FALSE
+IN-037,11/4/2025 0:00,37.13,7.39,1.104,in_control,in_spec,In Control,In Spec,0.14,FALSE
+IN-038,11/4/2025 2:00,36.99,7.41,1.323,in_control,in_spec,In Control,In Spec,0.02,FALSE
+IN-039,11/4/2025 4:00,36.9,7.43,1.198,in_control,in_spec,In Control,In Spec,0.13,FALSE
+IN-040,11/4/2025 6:00,36.42,7.51,1.238,in_control,in_spec,In Control,In Spec,0.7,FALSE
+IN-041,11/4/2025 8:00,37.4,7.31,1.27,in_control,in_spec,In Control,In Spec,0.49,FALSE
+IN-042,11/4/2025 10:00,36.3,7.46,1.31,in_control,in_spec,In Control,In Spec,0.76,FALSE
+IN-043,11/4/2025 12:00,36.5,7.34,1.205,in_control,in_spec,In Control,In Spec,0.55,FALSE
+IN-044,11/4/2025 14:00,36.75,7.24,1.203,in_control,in_spec,In Control,In Spec,0.41,FALSE
+IN-045,11/4/2025 16:00,36.47,7.45,1.154,in_control,in_spec,In Control,In Spec,0.58,FALSE
+IN-046,11/4/2025 18:00,37.77,7.32,1.184,in_control,in_spec,In Control,In Spec,0.85,FALSE
+IN-047,11/4/2025 20:00,37.41,7.28,1.211,in_control,in_spec,In Control,In Spec,0.53,FALSE
+IN-048,11/4/2025 22:00,37.65,7.24,1.209,in_control,in_spec,In Control,In Spec,0.81,FALSE
+IN-049,11/5/2025 0:00,37.13,7.48,1.138,in_control,in_spec,In Control,In Spec,0.21,FALSE
+IN-050,11/5/2025 2:00,36.34,7.45,1.215,in_control,in_spec,In Control,In Spec,0.71,FALSE
+IN-051,11/5/2025 4:00,37.13,7.43,1.166,in_control,in_spec,In Control,In Spec,0.16,FALSE
+IN-052,11/5/2025 6:00,37.12,7.43,1.164,in_control,in_spec,In Control,In Spec,0.15,FALSE
+IN-053,11/5/2025 8:00,37.93,7.45,1.14,in_control,in_spec,In Control,In Spec,0.98,FALSE
+IN-054,11/5/2025 10:00,37.33,7.3,1.239,in_control,in_spec,In Control,In Spec,0.43,FALSE
+IN-055,11/5/2025 12:00,37.58,7.32,1.248,in_control,in_spec,In Control,In Spec,0.66,FALSE
+IN-056,11/5/2025 14:00,37.21,7.48,1.295,in_control,in_spec,In Control,In Spec,0.29,FALSE
+IN-057,11/5/2025 16:00,36.88,7.32,1.156,in_control,in_spec,In Control,In Spec,0.2,FALSE
+IN-058,11/5/2025 18:00,36.59,7.39,1.217,in_control,in_spec,In Control,In Spec,0.42,FALSE
+IN-059,11/5/2025 20:00,37.14,7.48,1.201,in_control,in_spec,In Control,In Spec,0.22,FALSE
+IN-060,11/5/2025 22:00,37.73,7.37,1.336,in_control,in_spec,In Control,In Spec,0.75,FALSE
+IN-061,11/6/2025 0:00,37.31,7.31,1.146,in_control,in_spec,In Control,In Spec,0.4,FALSE
+IN-062,11/6/2025 2:00,37.24,7.38,1.236,in_control,in_spec,In Control,In Spec,0.26,FALSE
+IN-063,11/6/2025 4:00,37.24,7.39,1.158,in_control,in_spec,In Control,In Spec,0.24,FALSE
+IN-064,11/6/2025 6:00,36.24,7.36,1.243,in_control,in_spec,In Control,In Spec,0.8,FALSE
+IN-065,11/6/2025 8:00,37.11,7.28,1.209,in_control,in_spec,In Control,In Spec,0.23,FALSE
+IN-066,11/6/2025 10:00,37.19,7.31,1.208,in_control,in_spec,In Control,In Spec,0.28,FALSE
+IN-067,11/6/2025 12:00,37.03,7.29,1.218,in_control,in_spec,In Control,In Spec,0.14,FALSE
+IN-068,11/6/2025 14:00,37.28,7.51,1.253,in_control,in_spec,In Control,In Spec,0.39,FALSE
+IN-069,11/6/2025 16:00,36.31,7.31,1.226,in_control,in_spec,In Control,In Spec,0.78,FALSE
+IN-070,11/6/2025 18:00,37.26,7.45,1.393,in_control,in_spec,In Control,In Spec,0.31,FALSE
+IN-071,11/6/2025 20:00,37.29,7.51,1.248,in_control,in_spec,In Control,In Spec,0.4,FALSE
+IN-072,11/6/2025 22:00,37.33,7.37,1.238,in_control,in_spec,In Control,In Spec,0.36,FALSE
+IN-073,11/7/2025 0:00,36.61,7.38,1.176,in_control,in_spec,In Control,In Spec,0.41,FALSE
+IN-074,11/7/2025 2:00,37.04,7.63,1.107,in_control,in_spec,In Control,In Spec,0.27,FALSE
+IN-075,11/7/2025 4:00,37.34,7.24,1.176,in_control,in_spec,In Control,In Spec,0.5,FALSE
+IN-076,11/7/2025 6:00,37.54,7.41,1.146,in_control,in_spec,In Control,In Spec,0.55,FALSE
+IN-077,11/7/2025 8:00,36.64,7.47,1.163,in_control,in_spec,In Control,In Spec,0.43,FALSE
+IN-078,11/7/2025 10:00,37.11,7.4,1.167,in_control,in_spec,In Control,In Spec,0.11,FALSE
+IN-079,11/7/2025 12:00,38.07,7.46,1.099,in_control,in_spec,In Control,In Spec,1.14,FALSE
+IN-080,11/7/2025 14:00,37.09,7.33,1.243,in_control,in_spec,In Control,In Spec,0.16,FALSE
+IN-081,11/7/2025 16:00,36.6,7.39,1.225,in_control,in_spec,In Control,In Spec,0.41,FALSE
+IN-082,11/7/2025 18:00,37.43,7.28,1.183,in_control,in_spec,In Control,In Spec,0.55,FALSE
+IN-083,11/7/2025 20:00,36.76,7.33,1.288,in_control,in_spec,In Control,In Spec,0.3,FALSE
+IN-084,11/7/2025 22:00,37.2,7.27,1.246,in_control,in_spec,In Control,In Spec,0.33,FALSE
+IN-085,11/8/2025 0:00,38.06,7.5,1.124,in_control,in_spec,In Control,In Spec,1.16,FALSE
+IN-086,11/8/2025 2:00,36.76,7.53,1.165,in_control,in_spec,In Control,In Spec,0.37,FALSE
+IN-087,11/8/2025 4:00,37.22,7.48,1.154,in_control,in_spec,In Control,In Spec,0.3,FALSE
+IN-088,11/8/2025 6:00,36.97,7.08,1.149,in_control,in_spec,In Control,In Spec,0.35,FALSE
+IN-089,11/8/2025 8:00,36.87,7.28,1.282,in_control,in_spec,In Control,In Spec,0.25,FALSE
+IN-090,11/8/2025 10:00,36.28,7.36,1.207,in_control,in_spec,In Control,In Spec,0.76,FALSE
+IN-091,11/8/2025 12:00,37.72,7.26,1.258,in_control,in_spec,In Control,In Spec,0.86,FALSE
+IN-092,11/8/2025 14:00,37.01,7.3,1.223,in_control,in_spec,In Control,In Spec,0.1,FALSE
+IN-093,11/8/2025 16:00,37.1,7.34,1.203,in_control,in_spec,In Control,In Spec,0.16,FALSE
+IN-094,11/8/2025 18:00,36.81,7.41,1.233,in_control,in_spec,In Control,In Spec,0.2,FALSE
+IN-095,11/8/2025 20:00,37.79,7.28,1.307,in_control,in_spec,In Control,In Spec,0.92,FALSE
+IN-096,11/8/2025 22:00,36.02,7.38,1.229,in_control,in_spec,In Control,In Spec,0.99,FALSE
+IN-097,11/9/2025 0:00,37.14,7.34,1.19,in_control,in_spec,In Control,In Spec,0.2,FALSE
+IN-098,11/9/2025 2:00,36.75,7.34,1.242,in_control,in_spec,In Control,In Spec,0.31,FALSE
+IN-099,11/9/2025 4:00,37.18,7.33,1.245,in_control,in_spec,In Control,In Spec,0.25,FALSE
+IN-100,11/9/2025 6:00,37.15,7.48,1.231,in_control,in_spec,In Control,In Spec,0.23,FALSE
+IN-001,11/1/2025 0:00,36.59,6.58,1.012,in_control,out_spec,In Control,Out of Spec,1.24,FALSE
+IN-002,11/1/2025 2:00,37.31,6.79,0.918,in_control,out_spec,In Control,Out of Spec,0.91,FALSE
+IN-003,11/1/2025 4:00,37.64,6.56,0.982,in_control,out_spec,In Control,Out of Spec,1.48,FALSE
+IN-004,11/1/2025 6:00,36.9,6.71,1.065,in_control,out_spec,In Control,Out of Spec,0.79,FALSE
+IN-005,11/1/2025 8:00,37.41,7.13,1.096,in_control,out_spec,In Control,Out of Spec,0.69,FALSE
+IN-006,11/1/2025 10:00,37.01,7.07,0.853,in_control,out_spec,In Control,Out of Spec,0.34,FALSE
+IN-007,11/1/2025 12:00,37.16,6.75,0.915,in_control,out_spec,In Control,Out of Spec,0.81,FALSE
+IN-008,11/1/2025 14:00,37.3,6.47,1.214,in_control,out_spec,In Control,Out of Spec,1.22,FALSE
+IN-009,11/1/2025 16:00,36.5,6.31,1.074,in_control,out_spec,In Control,Out of Spec,1.59,FALSE
+IN-010,11/1/2025 18:00,37.4,7.05,0.994,in_control,out_spec,In Control,Out of Spec,0.75,FALSE
+IN-011,11/1/2025 20:00,36.99,6.44,0.911,in_control,out_spec,In Control,Out of Spec,0.97,FALSE
+IN-012,11/1/2025 22:00,36.66,7.19,0.878,in_control,out_spec,In Control,Out of Spec,0.55,FALSE
+IN-013,11/2/2025 0:00,36.59,6.67,0.962,in_control,out_spec,In Control,Out of Spec,1.14,FALSE
+IN-014,11/2/2025 2:00,36.72,6.47,0.937,in_control,out_spec,In Control,Out of Spec,1.21,FALSE
+IN-015,11/2/2025 4:00,37.12,6.6,0.829,in_control,out_spec,In Control,Out of Spec,0.93,FALSE
+IN-016,11/2/2025 6:00,37.12,6.22,0.689,in_control,out_spec,In Control,Out of Spec,1.3,FALSE
+IN-017,11/2/2025 8:00,36.64,6.71,0.947,in_control,out_spec,In Control,Out of Spec,1.04,FALSE
+IN-018,11/2/2025 10:00,37.74,7.14,0.876,in_control,out_spec,In Control,Out of Spec,0.99,FALSE
+IN-019,11/2/2025 12:00,36.99,6.4,0.897,in_control,out_spec,In Control,Out of Spec,1.01,FALSE
+IN-020,11/2/2025 14:00,36.86,6.93,0.776,in_control,out_spec,In Control,Out of Spec,0.62,FALSE
+IN-021,11/2/2025 16:00,37.26,7.41,0.884,in_control,out_spec,In Control,Out of Spec,0.27,FALSE
+IN-022,11/2/2025 18:00,37.2,7.08,0.84,in_control,out_spec,In Control,Out of Spec,0.52,FALSE
+IN-023,11/2/2025 20:00,37.11,6.81,0.915,in_control,out_spec,In Control,Out of Spec,0.71,FALSE
+IN-024,11/2/2025 22:00,36.61,6.81,0.975,in_control,out_spec,In Control,Out of Spec,0.98,FALSE
+IN-025,11/3/2025 0:00,37.73,7.18,1.223,in_control,out_spec,In Control,Out of Spec,0.94,FALSE
+IN-026,11/3/2025 2:00,36.62,7.15,0.928,in_control,out_spec,In Control,Out of Spec,0.63,FALSE
+IN-027,11/3/2025 4:00,38.09,6.48,0.774,in_control,out_spec,In Control,Out of Spec,2.02,FALSE
+IN-028,11/3/2025 6:00,36.7,5.95,0.821,in_control,out_spec,In Control,Out of Spec,1.75,FALSE
+IN-029,11/3/2025 8:00,36.62,6.86,0.951,in_control,out_spec,In Control,Out of Spec,0.92,FALSE
+IN-030,11/3/2025 10:00,37.94,7.18,0.813,in_control,out_spec,In Control,Out of Spec,1.16,FALSE
+IN-031,11/3/2025 12:00,36.55,7,0.702,in_control,out_spec,In Control,Out of Spec,0.85,FALSE
+IN-032,11/3/2025 14:00,37.92,7.27,0.83,in_control,out_spec,In Control,Out of Spec,1.04,FALSE
+IN-033,11/3/2025 16:00,36.14,7.34,0.883,in_control,out_spec,In Control,Out of Spec,0.92,FALSE
+IN-034,11/3/2025 18:00,37.62,6.16,0.81,in_control,out_spec,In Control,Out of Spec,1.86,FALSE
+IN-035,11/3/2025 20:00,37,6.82,0.832,in_control,out_spec,In Control,Out of Spec,0.58,FALSE
+IN-036,11/3/2025 22:00,37.31,6.37,0.879,in_control,out_spec,In Control,Out of Spec,1.34,FALSE
+IN-037,11/4/2025 0:00,37.06,7.01,1.007,in_control,out_spec,In Control,Out of Spec,0.45,FALSE
+IN-038,11/4/2025 2:00,36.44,6.19,1.092,in_control,out_spec,In Control,Out of Spec,1.78,FALSE
+IN-039,11/4/2025 4:00,37.17,6.5,1.133,in_control,out_spec,In Control,Out of Spec,1.07,FALSE
+IN-040,11/4/2025 6:00,37.06,7.27,0.91,in_control,out_spec,In Control,Out of Spec,0.19,FALSE
+IN-041,11/4/2025 8:00,38.03,7.5,0.863,in_control,out_spec,In Control,Out of Spec,1.13,FALSE
+IN-042,11/4/2025 10:00,37.49,7.06,1.105,in_control,out_spec,In Control,Out of Spec,0.83,FALSE
+IN-043,11/4/2025 12:00,36.52,7.07,1.059,in_control,out_spec,In Control,Out of Spec,0.81,FALSE
+IN-044,11/4/2025 14:00,36.12,6.33,0.594,in_control,out_spec,In Control,Out of Spec,1.95,FALSE
+IN-045,11/4/2025 16:00,36.87,7.09,1.125,in_control,out_spec,In Control,Out of Spec,0.45,FALSE
+IN-046,11/4/2025 18:00,37.04,7.45,0.693,in_control,out_spec,In Control,Out of Spec,0.09,FALSE
+IN-047,11/4/2025 20:00,36.15,6.78,0.958,in_control,out_spec,In Control,Out of Spec,1.47,FALSE
+IN-048,11/4/2025 22:00,36.98,5.97,0.887,in_control,out_spec,In Control,Out of Spec,1.44,FALSE
+IN-049,11/5/2025 0:00,36.35,7.07,0.955,in_control,out_spec,In Control,Out of Spec,0.98,FALSE
+IN-050,11/5/2025 2:00,36.53,6.59,0.741,in_control,out_spec,In Control,Out of Spec,1.28,FALSE
+IN-051,11/5/2025 4:00,36.97,7.18,0.752,in_control,out_spec,In Control,Out of Spec,0.25,FALSE
+IN-052,11/5/2025 6:00,37.25,6.59,0.781,in_control,out_spec,In Control,Out of Spec,1.06,FALSE
+IN-053,11/5/2025 8:00,36.95,6.39,0.817,in_control,out_spec,In Control,Out of Spec,1.07,FALSE
+IN-054,11/5/2025 10:00,36.4,7.59,0.905,in_control,out_spec,In Control,Out of Spec,0.78,FALSE
+IN-055,11/5/2025 12:00,36.65,6.89,0.883,in_control,out_spec,In Control,Out of Spec,0.86,FALSE
+IN-056,11/5/2025 14:00,36.89,7.05,1.014,in_control,out_spec,In Control,Out of Spec,0.46,FALSE
+IN-057,11/5/2025 16:00,36.73,6.57,0.859,in_control,out_spec,In Control,Out of Spec,1.1,FALSE
+IN-058,11/5/2025 18:00,35.85,6.19,1.105,in_control,out_spec,In Control,Out of Spec,2.36,FALSE
+IN-059,11/5/2025 20:00,37.82,6.7,0.986,in_control,out_spec,In Control,Out of Spec,1.52,FALSE
+IN-060,11/5/2025 22:00,37.16,8.03,1.068,in_control,out_spec,In Control,Out of Spec,0.79,FALSE
+IN-061,11/6/2025 0:00,36.94,6.42,0.659,in_control,out_spec,In Control,Out of Spec,1.05,FALSE
+IN-062,11/6/2025 2:00,37.1,6.5,0.687,in_control,out_spec,In Control,Out of Spec,1,FALSE
+IN-063,11/6/2025 4:00,36.68,6.37,1.153,in_control,out_spec,In Control,Out of Spec,1.36,FALSE
+IN-064,11/6/2025 6:00,37.44,6.8,1.122,in_control,out_spec,In Control,Out of Spec,1.04,FALSE
+IN-065,11/6/2025 8:00,37.04,6.46,1.128,in_control,out_spec,In Control,Out of Spec,0.98,FALSE
+IN-066,11/6/2025 10:00,37.27,6.39,0.871,in_control,out_spec,In Control,Out of Spec,1.28,FALSE
+IN-067,11/6/2025 12:00,36.56,6.25,1.039,in_control,out_spec,In Control,Out of Spec,1.59,FALSE
+IN-068,11/6/2025 14:00,37.95,6.24,0.984,in_control,out_spec,In Control,Out of Spec,2.11,FALSE
+IN-069,11/6/2025 16:00,36.67,6.61,0.811,in_control,out_spec,In Control,Out of Spec,1.12,FALSE
+IN-070,11/6/2025 18:00,36.57,6.82,0.775,in_control,out_spec,In Control,Out of Spec,1.01,FALSE
+IN-071,11/6/2025 20:00,37.14,6.78,0.864,in_control,out_spec,In Control,Out of Spec,0.76,FALSE
+IN-072,11/6/2025 22:00,36.55,6.57,1.013,in_control,out_spec,In Control,Out of Spec,1.28,FALSE
+IN-073,11/7/2025 0:00,37.25,6.41,0.915,in_control,out_spec,In Control,Out of Spec,1.24,FALSE
+IN-074,11/7/2025 2:00,37.38,6.13,0.982,in_control,out_spec,In Control,Out of Spec,1.64,FALSE
+IN-075,11/7/2025 4:00,36.67,7.03,0.786,in_control,out_spec,In Control,Out of Spec,0.7,FALSE
+IN-076,11/7/2025 6:00,36.1,6.15,0.907,in_control,out_spec,In Control,Out of Spec,2.15,FALSE
+IN-077,11/7/2025 8:00,37.13,6.44,0.996,in_control,out_spec,In Control,Out of Spec,1.09,FALSE
+IN-078,11/7/2025 10:00,36.17,6.77,0.718,in_control,out_spec,In Control,Out of Spec,1.46,FALSE
+IN-079,11/7/2025 12:00,36.67,6.82,0.771,in_control,out_spec,In Control,Out of Spec,0.91,FALSE
+IN-080,11/7/2025 14:00,36.81,7.2,0.813,in_control,out_spec,In Control,Out of Spec,0.39,FALSE
+IN-081,11/7/2025 16:00,37.42,6.35,0.979,in_control,out_spec,In Control,Out of Spec,1.47,FALSE
+IN-082,11/7/2025 18:00,37.72,5.81,0.78,in_control,out_spec,In Control,Out of Spec,2.31,FALSE
+IN-083,11/7/2025 20:00,37.29,6.72,0.956,in_control,out_spec,In Control,Out of Spec,0.97,FALSE
+IN-084,11/7/2025 22:00,36.7,6.83,0.877,in_control,out_spec,In Control,Out of Spec,0.87,FALSE
+IN-085,11/8/2025 0:00,37.58,6.9,0.951,in_control,out_spec,In Control,Out of Spec,1.08,FALSE
+IN-086,11/8/2025 2:00,36.79,6.6,0.835,in_control,out_spec,In Control,Out of Spec,1,FALSE
+IN-087,11/8/2025 4:00,37.2,6.63,0.943,in_control,out_spec,In Control,Out of Spec,0.97,FALSE
+IN-088,11/8/2025 6:00,38.04,7.15,0.851,in_control,out_spec,In Control,Out of Spec,1.29,FALSE
+IN-089,11/8/2025 8:00,37.6,6.64,0.594,in_control,out_spec,In Control,Out of Spec,1.36,FALSE
+IN-090,11/8/2025 10:00,36.5,6.05,0.847,in_control,out_spec,In Control,Out of Spec,1.85,FALSE
+IN-091,11/8/2025 12:00,37.01,7.47,0.949,in_control,out_spec,In Control,Out of Spec,0.08,FALSE
+IN-092,11/8/2025 14:00,36.89,7.13,0.568,in_control,out_spec,In Control,Out of Spec,0.38,FALSE
+IN-093,11/8/2025 16:00,37.12,7.11,0.678,in_control,out_spec,In Control,Out of Spec,0.41,FALSE
+IN-094,11/8/2025 18:00,37.57,6.94,0.838,in_control,out_spec,In Control,Out of Spec,1.04,FALSE
+IN-095,11/8/2025 20:00,37.32,7.71,0.927,in_control,out_spec,In Control,Out of Spec,0.62,FALSE
+IN-096,11/8/2025 22:00,37.12,6.62,0.773,in_control,out_spec,In Control,Out of Spec,0.91,FALSE
+IN-097,11/9/2025 0:00,37.42,6.46,0.911,in_control,out_spec,In Control,Out of Spec,1.36,FALSE
+IN-098,11/9/2025 2:00,36.76,6.99,0.95,in_control,out_spec,In Control,Out of Spec,0.65,FALSE
+IN-099,11/9/2025 4:00,37.52,6.6,0.86,in_control,out_spec,In Control,Out of Spec,1.32,FALSE
+IN-100,11/9/2025 6:00,36.51,6.62,0.957,in_control,out_spec,In Control,Out of Spec,1.27,FALSE
+OU-001,11/1/2025 0:00,40.14,7.31,1.243,out_control,in_spec,Out of Control,In Spec,3.23,TRUE
+OU-002,11/1/2025 2:00,41.03,7.44,1.294,out_control,in_spec,Out of Control,In Spec,4.07,TRUE
+OU-003,11/1/2025 4:00,37.84,7.28,1.111,out_control,in_spec,Out of Control,In Spec,0.96,FALSE
+OU-004,11/1/2025 6:00,41.24,7.47,1.197,out_control,in_spec,Out of Control,In Spec,4.31,TRUE
+OU-005,11/1/2025 8:00,39.42,7.29,1.322,out_control,in_spec,Out of Control,In Spec,2.53,TRUE
+OU-006,11/1/2025 10:00,39.19,7.41,1.236,out_control,in_spec,Out of Control,In Spec,2.2,FALSE
+OU-007,11/1/2025 12:00,39.72,7.42,1.16,out_control,in_spec,Out of Control,In Spec,2.74,TRUE
+OU-008,11/1/2025 14:00,39.71,7.59,1.267,out_control,in_spec,Out of Control,In Spec,2.9,TRUE
+OU-009,11/1/2025 16:00,41.39,7.35,1.151,out_control,in_spec,Out of Control,In Spec,4.44,TRUE
+OU-010,11/1/2025 18:00,38.81,7.41,1.255,out_control,in_spec,Out of Control,In Spec,1.82,FALSE
+OU-011,11/1/2025 20:00,36.46,7.55,1.192,out_control,in_spec,Out of Control,In Spec,0.69,FALSE
+OU-012,11/1/2025 22:00,38.36,7.3,1.117,out_control,in_spec,Out of Control,In Spec,1.46,FALSE
+OU-013,11/2/2025 0:00,40.23,7.41,1.136,out_control,in_spec,Out of Control,In Spec,3.24,TRUE
+OU-014,11/2/2025 2:00,37.06,7.37,1.283,out_control,in_spec,Out of Control,In Spec,0.09,FALSE
+OU-015,11/2/2025 4:00,38.61,7.25,1.188,out_control,in_spec,Out of Control,In Spec,1.76,FALSE
+OU-016,11/2/2025 6:00,38.59,7.13,1.197,out_control,in_spec,Out of Control,In Spec,1.86,FALSE
+OU-017,11/2/2025 8:00,38.65,7.47,1.292,out_control,in_spec,Out of Control,In Spec,1.72,FALSE
+OU-018,11/2/2025 10:00,40.69,7.37,1.145,out_control,in_spec,Out of Control,In Spec,3.72,TRUE
+OU-019,11/2/2025 12:00,42.86,7.41,1.201,out_control,in_spec,Out of Control,In Spec,5.87,TRUE
+OU-020,11/2/2025 14:00,38.96,7.42,1.193,out_control,in_spec,Out of Control,In Spec,1.98,FALSE
+OU-021,11/2/2025 16:00,38.14,7.35,1.198,out_control,in_spec,Out of Control,In Spec,1.19,FALSE
+OU-022,11/2/2025 18:00,38.18,7.33,1.205,out_control,in_spec,Out of Control,In Spec,1.26,FALSE
+OU-023,11/2/2025 20:00,38.62,7.55,1.067,out_control,in_spec,Out of Control,In Spec,1.77,FALSE
+OU-024,11/2/2025 22:00,40.64,7.52,1.096,out_control,in_spec,Out of Control,In Spec,3.76,TRUE
+OU-025,11/3/2025 0:00,38.49,7.36,1.13,out_control,in_spec,Out of Control,In Spec,1.52,FALSE
+OU-026,11/3/2025 2:00,37.83,7.29,1.288,out_control,in_spec,Out of Control,In Spec,0.94,FALSE
+OU-027,11/3/2025 4:00,40.4,7.53,1.236,out_control,in_spec,Out of Control,In Spec,3.53,TRUE
+OU-028,11/3/2025 6:00,37.31,7.35,1.224,out_control,in_spec,Out of Control,In Spec,0.36,FALSE
+OU-029,11/3/2025 8:00,37.17,7.47,1.188,out_control,in_spec,Out of Control,In Spec,0.24,FALSE
+OU-030,11/3/2025 10:00,38.44,7.47,1.222,out_control,in_spec,Out of Control,In Spec,1.51,FALSE
+OU-031,11/3/2025 12:00,38.46,7.52,1.146,out_control,in_spec,Out of Control,In Spec,1.57,FALSE
+OU-032,11/3/2025 14:00,39.92,7.46,1.185,out_control,in_spec,Out of Control,In Spec,2.98,TRUE
+OU-033,11/3/2025 16:00,39.49,7.27,1.246,out_control,in_spec,Out of Control,In Spec,2.61,TRUE
+OU-034,11/3/2025 18:00,38.72,7.35,1.252,out_control,in_spec,Out of Control,In Spec,1.77,FALSE
+OU-035,11/3/2025 20:00,37.94,7.26,1.122,out_control,in_spec,Out of Control,In Spec,1.08,FALSE
+OU-036,11/3/2025 22:00,39.91,7.27,1.288,out_control,in_spec,Out of Control,In Spec,3.04,TRUE
+OU-037,11/4/2025 0:00,35.88,7.57,1.211,out_control,in_spec,Out of Control,In Spec,1.29,FALSE
+OU-038,11/4/2025 2:00,38.85,7.35,1.22,out_control,in_spec,Out of Control,In Spec,1.91,FALSE
+OU-039,11/4/2025 4:00,38.94,7.51,1.206,out_control,in_spec,Out of Control,In Spec,2.05,FALSE
+OU-040,11/4/2025 6:00,39.23,7.36,1.197,out_control,in_spec,Out of Control,In Spec,2.26,FALSE
+OU-041,11/4/2025 8:00,39.46,7.23,1.133,out_control,in_spec,Out of Control,In Spec,2.63,TRUE
+OU-042,11/4/2025 10:00,40.11,7.42,1.191,out_control,in_spec,Out of Control,In Spec,3.13,TRUE
+OU-043,11/4/2025 12:00,39.03,7.43,1.173,out_control,in_spec,Out of Control,In Spec,2.06,FALSE
+OU-044,11/4/2025 14:00,37.83,7.42,1.151,out_control,in_spec,Out of Control,In Spec,0.85,FALSE
+OU-045,11/4/2025 16:00,39.61,7.23,1.251,out_control,in_spec,Out of Control,In Spec,2.78,TRUE
+OU-046,11/4/2025 18:00,39.71,7.43,1.249,out_control,in_spec,Out of Control,In Spec,2.73,TRUE
+OU-047,11/4/2025 20:00,41.5,7.5,1.108,out_control,in_spec,Out of Control,In Spec,4.6,TRUE
+OU-048,11/4/2025 22:00,37.08,7.34,1.201,out_control,in_spec,Out of Control,In Spec,0.14,FALSE
+OU-049,11/5/2025 0:00,39.78,7.33,1.209,out_control,in_spec,Out of Control,In Spec,2.85,TRUE
+OU-050,11/5/2025 2:00,37.87,7.34,1.13,out_control,in_spec,Out of Control,In Spec,0.93,FALSE
+OU-051,11/5/2025 4:00,37.62,7.26,1.151,out_control,in_spec,Out of Control,In Spec,0.75,FALSE
+OU-052,11/5/2025 6:00,40.58,7.31,1.332,out_control,in_spec,Out of Control,In Spec,3.68,TRUE
+OU-053,11/5/2025 8:00,39.74,7.42,1.157,out_control,in_spec,Out of Control,In Spec,2.76,TRUE
+OU-054,11/5/2025 10:00,40.05,7.34,1.206,out_control,in_spec,Out of Control,In Spec,3.11,TRUE
+OU-055,11/5/2025 12:00,42.84,7.39,1.257,out_control,in_spec,Out of Control,In Spec,5.85,TRUE
+OU-056,11/5/2025 14:00,37.95,7.4,1.289,out_control,in_spec,Out of Control,In Spec,0.95,FALSE
+OU-057,11/5/2025 16:00,38.06,7.58,1.235,out_control,in_spec,Out of Control,In Spec,1.24,FALSE
+OU-058,11/5/2025 18:00,38.16,7.46,1.249,out_control,in_spec,Out of Control,In Spec,1.22,FALSE
+OU-059,11/5/2025 20:00,39.93,7.24,1.164,out_control,in_spec,Out of Control,In Spec,3.09,TRUE
+OU-060,11/5/2025 22:00,38.63,7.39,1.231,out_control,in_spec,Out of Control,In Spec,1.64,FALSE
+OU-061,11/6/2025 0:00,39.27,7.27,1.219,out_control,in_spec,Out of Control,In Spec,2.4,FALSE
+OU-062,11/6/2025 2:00,39.92,7.46,1.254,out_control,in_spec,Out of Control,In Spec,2.97,TRUE
+OU-063,11/6/2025 4:00,40.25,7.45,1.196,out_control,in_spec,Out of Control,In Spec,3.3,TRUE
+OU-064,11/6/2025 6:00,36.51,7.44,1.21,out_control,in_spec,Out of Control,In Spec,0.53,FALSE
+OU-065,11/6/2025 8:00,39.41,7.27,1.146,out_control,in_spec,Out of Control,In Spec,2.54,TRUE
+OU-066,11/6/2025 10:00,40.58,7.4,1.234,out_control,in_spec,Out of Control,In Spec,3.58,TRUE
+OU-067,11/6/2025 12:00,39.04,7.4,1.247,out_control,in_spec,Out of Control,In Spec,2.05,FALSE
+OU-068,11/6/2025 14:00,38.23,7.41,1.177,out_control,in_spec,Out of Control,In Spec,1.24,FALSE
+OU-069,11/6/2025 16:00,38.35,7.37,1.211,out_control,in_spec,Out of Control,In Spec,1.38,FALSE
+OU-070,11/6/2025 18:00,38.28,7.53,1.155,out_control,in_spec,Out of Control,In Spec,1.41,FALSE
+OU-071,11/6/2025 20:00,38.72,7.36,1.272,out_control,in_spec,Out of Control,In Spec,1.76,FALSE
+OU-072,11/6/2025 22:00,39.29,7.5,1.126,out_control,in_spec,Out of Control,In Spec,2.4,FALSE
+OU-073,11/7/2025 0:00,39.4,7.49,1.204,out_control,in_spec,Out of Control,In Spec,2.49,FALSE
+OU-074,11/7/2025 2:00,40.6,7.35,1.27,out_control,in_spec,Out of Control,In Spec,3.65,TRUE
+OU-075,11/7/2025 4:00,42.45,7.36,1.178,out_control,in_spec,Out of Control,In Spec,5.48,TRUE
+OU-076,11/7/2025 6:00,41.18,7.56,1.174,out_control,in_spec,Out of Control,In Spec,4.34,TRUE
+OU-077,11/7/2025 8:00,38.37,7.37,1.133,out_control,in_spec,Out of Control,In Spec,1.4,FALSE
+OU-078,11/7/2025 10:00,37.62,7.3,1.162,out_control,in_spec,Out of Control,In Spec,0.72,FALSE
+OU-079,11/7/2025 12:00,38.95,7.42,1.278,out_control,in_spec,Out of Control,In Spec,1.97,FALSE
+OU-080,11/7/2025 14:00,37.5,7.5,1.189,out_control,in_spec,Out of Control,In Spec,0.6,FALSE
+OU-081,11/7/2025 16:00,38.93,7.47,1.144,out_control,in_spec,Out of Control,In Spec,1.99,FALSE
+OU-082,11/7/2025 18:00,39.57,7.42,1.225,out_control,in_spec,Out of Control,In Spec,2.59,TRUE
+OU-083,11/7/2025 20:00,39.43,7.65,1.168,out_control,in_spec,Out of Control,In Spec,2.68,TRUE
+OU-084,11/7/2025 22:00,38.2,7.34,1.172,out_control,in_spec,Out of Control,In Spec,1.27,FALSE
+OU-085,11/8/2025 0:00,38.04,7.52,1.271,out_control,in_spec,Out of Control,In Spec,1.16,FALSE
+OU-086,11/8/2025 2:00,38.14,7.32,1.224,out_control,in_spec,Out of Control,In Spec,1.23,FALSE
+OU-087,11/8/2025 4:00,38.17,7.46,1.21,out_control,in_spec,Out of Control,In Spec,1.23,FALSE
+OU-088,11/8/2025 6:00,36.73,7.55,1.29,out_control,in_spec,Out of Control,In Spec,0.43,FALSE
+OU-089,11/8/2025 8:00,38.08,7.36,1.214,out_control,in_spec,Out of Control,In Spec,1.12,FALSE
+OU-090,11/8/2025 10:00,39.5,7.47,1.301,out_control,in_spec,Out of Control,In Spec,2.57,TRUE
+OU-091,11/8/2025 12:00,38.73,7.32,1.131,out_control,in_spec,Out of Control,In Spec,1.81,FALSE
+OU-092,11/8/2025 14:00,37.9,7.4,1.29,out_control,in_spec,Out of Control,In Spec,0.91,FALSE
+OU-093,11/8/2025 16:00,38.22,7.42,1.199,out_control,in_spec,Out of Control,In Spec,1.25,FALSE
+OU-094,11/8/2025 18:00,40.78,7.65,1.173,out_control,in_spec,Out of Control,In Spec,4.04,TRUE
+OU-095,11/8/2025 20:00,38.27,7.5,1.234,out_control,in_spec,Out of Control,In Spec,1.37,FALSE
+OU-096,11/8/2025 22:00,41.77,7.46,1.182,out_control,in_spec,Out of Control,In Spec,4.83,TRUE
+OU-097,11/9/2025 0:00,39.89,7.51,1.241,out_control,in_spec,Out of Control,In Spec,3,TRUE
+OU-098,11/9/2025 2:00,39.76,7.51,1.258,out_control,in_spec,Out of Control,In Spec,2.87,TRUE
+OU-099,11/9/2025 4:00,41.07,7.46,1.192,out_control,in_spec,Out of Control,In Spec,4.14,TRUE
+OU-100,11/9/2025 6:00,39.22,7.52,1.159,out_control,in_spec,Out of Control,In Spec,2.34,FALSE
+OU-001,11/1/2025 0:00,39.55,6.64,0.904,out_control,out_spec,Out of Control,Out of Spec,3.31,TRUE
+OU-002,11/1/2025 2:00,40.92,6.88,0.907,out_control,out_spec,Out of Control,Out of Spec,4.44,TRUE
+OU-003,11/1/2025 4:00,36.96,7.1,0.997,out_control,out_spec,Out of Control,Out of Spec,0.34,FALSE
+OU-004,11/1/2025 6:00,42.24,6.68,0.933,out_control,out_spec,Out of Control,Out of Spec,5.97,TRUE
+OU-005,11/1/2025 8:00,39.37,7.43,0.886,out_control,out_spec,Out of Control,Out of Spec,2.41,FALSE
+OU-006,11/1/2025 10:00,39.42,7.04,0.928,out_control,out_spec,Out of Control,Out of Spec,2.78,TRUE
+OU-007,11/1/2025 12:00,38.33,6.88,1.061,out_control,out_spec,Out of Control,Out of Spec,1.85,FALSE
+OU-008,11/1/2025 14:00,37.46,6.85,0.795,out_control,out_spec,Out of Control,Out of Spec,1.01,FALSE
+OU-009,11/1/2025 16:00,40.79,6.19,0.816,out_control,out_spec,Out of Control,Out of Spec,5,TRUE
+OU-010,11/1/2025 18:00,39.57,7.43,0.89,out_control,out_spec,Out of Control,Out of Spec,2.59,TRUE
+OU-011,11/1/2025 20:00,38.17,7.55,0.683,out_control,out_spec,Out of Control,Out of Spec,1.32,FALSE
+OU-012,11/1/2025 22:00,35.7,6.98,0.825,out_control,out_spec,Out of Control,Out of Spec,1.72,FALSE
+OU-013,11/2/2025 0:00,37.47,7.08,0.937,out_control,out_spec,Out of Control,Out of Spec,0.78,FALSE
+OU-014,11/2/2025 2:00,38.15,6.29,1.031,out_control,out_spec,Out of Control,Out of Spec,2.27,FALSE
+OU-015,11/2/2025 4:00,39.98,6.76,1.177,out_control,out_spec,Out of Control,Out of Spec,3.61,TRUE
+OU-016,11/2/2025 6:00,37.39,6.19,0.796,out_control,out_spec,Out of Control,Out of Spec,1.61,FALSE
+OU-017,11/2/2025 8:00,38.93,6.9,0.864,out_control,out_spec,Out of Control,Out of Spec,2.43,FALSE
+OU-018,11/2/2025 10:00,39.53,6.3,1.117,out_control,out_spec,Out of Control,Out of Spec,3.63,TRUE
+OU-019,11/2/2025 12:00,38.88,7.25,0.951,out_control,out_spec,Out of Control,Out of Spec,2.03,FALSE
+OU-020,11/2/2025 14:00,39.69,7.03,0.967,out_control,out_spec,Out of Control,Out of Spec,3.06,TRUE
+OU-021,11/2/2025 16:00,39.96,7.33,0.929,out_control,out_spec,Out of Control,Out of Spec,3.03,TRUE
+OU-022,11/2/2025 18:00,40.06,6.76,1.116,out_control,out_spec,Out of Control,Out of Spec,3.7,TRUE
+OU-023,11/2/2025 20:00,37.99,7.52,0.894,out_control,out_spec,Out of Control,Out of Spec,1.11,FALSE
+OU-024,11/2/2025 22:00,36.85,6.85,0.798,out_control,out_spec,Out of Control,Out of Spec,0.69,FALSE
+OU-025,11/3/2025 0:00,40.26,6.54,0.833,out_control,out_spec,Out of Control,Out of Spec,4.12,TRUE
+OU-026,11/3/2025 2:00,36.17,6.62,0.536,out_control,out_spec,Out of Control,Out of Spec,1.62,FALSE
+OU-027,11/3/2025 4:00,36.62,7.1,1.018,out_control,out_spec,Out of Control,Out of Spec,0.67,FALSE
+OU-028,11/3/2025 6:00,39.64,6.41,0.893,out_control,out_spec,Out of Control,Out of Spec,3.62,TRUE
+OU-029,11/3/2025 8:00,38.99,6.34,1.126,out_control,out_spec,Out of Control,Out of Spec,3.06,TRUE
+OU-030,11/3/2025 10:00,40.32,6.71,0.904,out_control,out_spec,Out of Control,Out of Spec,4,TRUE
+OU-031,11/3/2025 12:00,39.31,5.98,0.863,out_control,out_spec,Out of Control,Out of Spec,3.73,TRUE
+OU-032,11/3/2025 14:00,37.98,6.4,0.858,out_control,out_spec,Out of Control,Out of Spec,1.98,FALSE
+OU-033,11/3/2025 16:00,41.7,7.06,0.814,out_control,out_spec,Out of Control,Out of Spec,5.04,TRUE
+OU-034,11/3/2025 18:00,39.86,7.36,1.039,out_control,out_spec,Out of Control,Out of Spec,2.9,TRUE
+OU-035,11/3/2025 20:00,39.09,6.54,1.005,out_control,out_spec,Out of Control,Out of Spec,2.95,TRUE
+OU-036,11/3/2025 22:00,39.59,7.16,0.995,out_control,out_spec,Out of Control,Out of Spec,2.83,TRUE
+OU-037,11/4/2025 0:00,40.57,6.59,1.098,out_control,out_spec,Out of Control,Out of Spec,4.39,TRUE
+OU-038,11/4/2025 2:00,39.3,7.63,0.797,out_control,out_spec,Out of Control,Out of Spec,2.53,TRUE
+OU-039,11/4/2025 4:00,41.6,6.88,0.802,out_control,out_spec,Out of Control,Out of Spec,5.12,TRUE
+OU-040,11/4/2025 6:00,38.27,6.67,0.964,out_control,out_spec,Out of Control,Out of Spec,2,FALSE
+OU-041,11/4/2025 8:00,39.78,6.57,0.896,out_control,out_spec,Out of Control,Out of Spec,3.61,TRUE
+OU-042,11/4/2025 10:00,42.21,7.49,0.965,out_control,out_spec,Out of Control,Out of Spec,5.3,TRUE
+OU-043,11/4/2025 12:00,39.06,6.85,0.992,out_control,out_spec,Out of Control,Out of Spec,2.61,TRUE
+OU-044,11/4/2025 14:00,37.47,6.7,0.65,out_control,out_spec,Out of Control,Out of Spec,1.17,FALSE
+OU-045,11/4/2025 16:00,39.6,7.06,0.828,out_control,out_spec,Out of Control,Out of Spec,2.94,TRUE
+OU-046,11/4/2025 18:00,41.36,6.31,0.68,out_control,out_spec,Out of Control,Out of Spec,5.45,TRUE
+OU-047,11/4/2025 20:00,39.34,7.22,1.153,out_control,out_spec,Out of Control,Out of Spec,2.52,TRUE
+OU-048,11/4/2025 22:00,38.31,7.23,0.894,out_control,out_spec,Out of Control,Out of Spec,1.48,FALSE
+OU-049,11/5/2025 0:00,38.74,7.15,0.998,out_control,out_spec,Out of Control,Out of Spec,1.99,FALSE
+OU-050,11/5/2025 2:00,36.64,7.39,1.107,out_control,out_spec,Out of Control,Out of Spec,0.37,FALSE
+OU-051,11/5/2025 4:00,38.06,6.96,0.974,out_control,out_spec,Out of Control,Out of Spec,1.5,FALSE
+OU-052,11/5/2025 6:00,39.39,6.58,0.799,out_control,out_spec,Out of Control,Out of Spec,3.21,TRUE
+OU-053,11/5/2025 8:00,38.96,7.27,0.982,out_control,out_spec,Out of Control,Out of Spec,2.09,FALSE
+OU-054,11/5/2025 10:00,38.44,7.11,0.473,out_control,out_spec,Out of Control,Out of Spec,1.74,FALSE
+OU-055,11/5/2025 12:00,40.72,6.1,0.846,out_control,out_spec,Out of Control,Out of Spec,5.02,TRUE
+OU-056,11/5/2025 14:00,37.32,6.28,1.074,out_control,out_spec,Out of Control,Out of Spec,1.44,FALSE
+OU-057,11/5/2025 16:00,38.3,6.94,0.893,out_control,out_spec,Out of Control,Out of Spec,1.76,FALSE
+OU-058,11/5/2025 18:00,39.72,6.83,0.708,out_control,out_spec,Out of Control,Out of Spec,3.28,TRUE
+OU-059,11/5/2025 20:00,40.49,6.6,0.667,out_control,out_spec,Out of Control,Out of Spec,4.29,TRUE
+OU-060,11/5/2025 22:00,38.36,7.4,1.028,out_control,out_spec,Out of Control,Out of Spec,1.36,FALSE
+OU-061,11/6/2025 0:00,38.48,6.66,0.852,out_control,out_spec,Out of Control,Out of Spec,2.22,FALSE
+OU-062,11/6/2025 2:00,42.12,6.95,0.965,out_control,out_spec,Out of Control,Out of Spec,5.56,TRUE
+OU-063,11/6/2025 4:00,40.55,6.9,0.861,out_control,out_spec,Out of Control,Out of Spec,4.05,TRUE
+OU-064,11/6/2025 6:00,38.71,6.77,0.894,out_control,out_spec,Out of Control,Out of Spec,2.33,FALSE
+OU-065,11/6/2025 8:00,40.09,6.82,1.01,out_control,out_spec,Out of Control,Out of Spec,3.67,TRUE
+OU-066,11/6/2025 10:00,38.88,6.83,0.6,out_control,out_spec,Out of Control,Out of Spec,2.45,FALSE
+OU-067,11/6/2025 12:00,40.37,6.94,1.05,out_control,out_spec,Out of Control,Out of Spec,3.84,TRUE
+OU-068,11/6/2025 14:00,34.66,7.64,0.879,out_control,out_spec,Out of Control,Out of Spec,2.58,TRUE
+OU-069,11/6/2025 16:00,40.66,6.38,0.992,out_control,out_spec,Out of Control,Out of Spec,4.68,TRUE
+OU-070,11/6/2025 18:00,37.42,6.55,1.187,out_control,out_spec,Out of Control,Out of Spec,1.27,FALSE
+OU-071,11/6/2025 20:00,38.71,6.89,1.031,out_control,out_spec,Out of Control,Out of Spec,2.23,FALSE
+OU-072,11/6/2025 22:00,39.74,6.86,0.955,out_control,out_spec,Out of Control,Out of Spec,3.28,TRUE
+OU-073,11/7/2025 0:00,42.61,6.78,0.93,out_control,out_spec,Out of Control,Out of Spec,6.23,TRUE
+OU-074,11/7/2025 2:00,40.58,7.24,1.078,out_control,out_spec,Out of Control,Out of Spec,3.73,TRUE
+OU-075,11/7/2025 4:00,39.96,6.34,1.145,out_control,out_spec,Out of Control,Out of Spec,4.02,TRUE
+OU-076,11/7/2025 6:00,37.28,6.92,0.787,out_control,out_spec,Out of Control,Out of Spec,0.76,FALSE
+OU-077,11/7/2025 8:00,38.9,6.93,0.948,out_control,out_spec,Out of Control,Out of Spec,2.37,FALSE
+OU-078,11/7/2025 10:00,39.63,7.45,0.968,out_control,out_spec,Out of Control,Out of Spec,2.68,TRUE
+OU-079,11/7/2025 12:00,38.63,7.19,1.078,out_control,out_spec,Out of Control,Out of Spec,1.85,FALSE
+OU-080,11/7/2025 14:00,37.16,7.04,1.005,out_control,out_spec,Out of Control,Out of Spec,0.52,FALSE
+OU-081,11/7/2025 16:00,38.55,7.35,0.877,out_control,out_spec,Out of Control,Out of Spec,1.6,FALSE
+OU-082,11/7/2025 18:00,39.19,6.73,0.902,out_control,out_spec,Out of Control,Out of Spec,2.86,TRUE
+OU-083,11/7/2025 20:00,37.36,6.22,1.139,out_control,out_spec,Out of Control,Out of Spec,1.53,FALSE
+OU-084,11/7/2025 22:00,37.73,6.4,0.577,out_control,out_spec,Out of Control,Out of Spec,1.73,FALSE
+OU-085,11/8/2025 0:00,38.04,6.27,1.146,out_control,out_spec,Out of Control,Out of Spec,2.17,FALSE
+OU-086,11/8/2025 2:00,40.51,6.52,1.238,out_control,out_spec,Out of Control,Out of Spec,4.39,TRUE
+OU-087,11/8/2025 4:00,40.47,6.67,0.525,out_control,out_spec,Out of Control,Out of Spec,4.2,TRUE
+OU-088,11/8/2025 6:00,42.44,6.24,0.653,out_control,out_spec,Out of Control,Out of Spec,6.59,TRUE
+OU-089,11/8/2025 8:00,40.53,7.78,1.108,out_control,out_spec,Out of Control,Out of Spec,3.91,TRUE
+OU-090,11/8/2025 10:00,39.85,7.04,1.028,out_control,out_spec,Out of Control,Out of Spec,3.21,TRUE
+OU-091,11/8/2025 12:00,40.14,6.91,0.916,out_control,out_spec,Out of Control,Out of Spec,3.63,TRUE
+OU-092,11/8/2025 14:00,38.91,6.5,0.858,out_control,out_spec,Out of Control,Out of Spec,2.81,TRUE
+OU-093,11/8/2025 16:00,36.46,6.76,0.752,out_control,out_spec,Out of Control,Out of Spec,1.18,FALSE
+OU-094,11/8/2025 18:00,37.34,6.87,1.109,out_control,out_spec,Out of Control,Out of Spec,0.87,FALSE
+OU-095,11/8/2025 20:00,40.38,6.17,0.752,out_control,out_spec,Out of Control,Out of Spec,4.61,TRUE
+OU-096,11/8/2025 22:00,40.41,6.41,0.866,out_control,out_spec,Out of Control,Out of Spec,4.4,TRUE
+OU-097,11/9/2025 0:00,39.83,6.41,0.916,out_control,out_spec,Out of Control,Out of Spec,3.81,TRUE
+OU-098,11/9/2025 2:00,37,6.56,0.948,out_control,out_spec,Out of Control,Out of Spec,0.84,FALSE
+OU-099,11/9/2025 4:00,36.61,6.98,0.897,out_control,out_spec,Out of Control,Out of Spec,0.81,FALSE
+OU-100,11/9/2025 6:00,39.83,6.89,1.105,out_control,out_spec,Out of Control,Out of Spec,3.34,TRUE

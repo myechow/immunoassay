@@ -1,0 +1,12 @@
+name: Immunoassay
+title: Immunoassay
+username: mye-chow
+account: mye-chow
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16329535
+bundleId: 11337915
+url: https://mye-chow.shinyapps.io/Immunoassay/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

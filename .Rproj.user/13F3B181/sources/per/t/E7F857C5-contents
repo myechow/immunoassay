@@ -1,0 +1,231 @@
+###############################################
+# Reliability, Bathtub Curve, and FMEA Analysis
+# Dataset: Medical_Device_Manufacturing_Dataset.csv
+###############################################
+
+library(readr)
+library(dplyr)
+library(ggplot2)
+
+###############################################
+# 0. CONFIGURATION – EDIT THESE IF NEEDED
+###############################################
+
+# Path to your dataset
+path_data <- "D:/Learning/Immunoassay Project/Medical_Device_Manufacturing_Dataset.csv"
+
+# Column names (change here if your headers differ)
+col_batch        <- "Batch ID"
+col_timestamp    <- "Timestamp"
+col_n_inspected  <- "n Inspected"
+col_defectives   <- "Defectives (np)"
+col_defects      <- "Defects (c)"
+col_opportunities<- "Opportunities"
+col_process_step <- "Process Step"
+col_special_cause<- "Special Cause Type"
+col_risk_score   <- "Risk Score"
+
+###############################################
+# 1. LOAD DATA
+###############################################
+
+df <- read_csv(path_data, show_col_types = FALSE)
+
+# Safe timestamp parsing
+if (col_timestamp %in% names(df)) {
+  ts_raw <- df[[col_timestamp]]
+  # Try ISO format with 'T'
+  ts_parsed <- as.POSIXct(ts_raw, format = "%Y-%m-%dT%H:%M:%S", tz = "UTC")
+  bad <- is.na(ts_parsed)
+  if (any(bad)) {
+    # Try space-separated format
+    ts_parsed[bad] <- as.POSIXct(ts_raw[bad], format = "%Y-%m-%d %H:%M:%S", tz = "UTC")
+  }
+  df[[col_timestamp]] <- ts_parsed
+}
+
+cat("Columns in dataset:\n")
+print(names(df))
+
+###############################################
+# 2. RELIABILITY ANALYSIS (BATCH LEVEL)
+###############################################
+# Treat each batch as a "time step"
+# Failure = defective unit; population = inspected units
+
+# Make sure the required columns exist
+needed_cols <- c(col_batch, col_n_inspected, col_defectives, col_timestamp)
+missing <- setdiff(needed_cols, names(df))
+if (length(missing) > 0) {
+  stop("Missing required columns for reliability: ", paste(missing, collapse = ", "))
+}
+
+# Aggregate to batch level
+batch <- df %>%
+  group_by(.data[[col_batch]]) %>%
+  summarise(
+    batch_time = suppressWarnings(min(.data[[col_timestamp]], na.rm = TRUE)),
+    n         = sum(as.numeric(.data[[col_n_inspected]]),  na.rm = TRUE),
+    failures  = sum(as.numeric(.data[[col_defectives]]),   na.rm = TRUE),
+    fail_rate = ifelse(n > 0, failures / n, NA_real_),
+    .groups   = "drop"
+  ) %>%
+  arrange(batch_time) %>%
+  mutate(batch_index = row_number())
+
+cat("\nFirst few batch-level rows:\n")
+print(head(batch, 10))
+
+###############################################
+# 2.1 Failure rate curve
+###############################################
+
+p_fail_rate <- ggplot(batch, aes(x = batch_index, y = fail_rate)) +
+  geom_line() +
+  geom_point(size = 0.8) +
+  labs(
+    title = "Process Failure Rate per Batch",
+    x = "Batch index (time order)",
+    y = "Failure rate (Defectives / n Inspected)"
+  ) +
+  theme_minimal()
+
+print(p_fail_rate)
+
+###############################################
+# 2.2 Reliability curve (approximate)
+###############################################
+
+batch <- batch %>%
+  mutate(
+    hazard      = pmin(pmax(fail_rate, 0), 0.99),  # keep between 0 and <1
+    reliability = cumprod(1 - hazard)              # R_k = Π (1 - h_i)
+  )
+
+p_reliability <- ggplot(batch, aes(x = batch_index, y = reliability)) +
+  geom_line() +
+  labs(
+    title = "Approximate Process Reliability over Production",
+    x = "Batch index (time order)",
+    y = "Reliability R"
+  ) +
+  theme_minimal()
+
+print(p_reliability)
+
+###############################################
+# 3. BATHTUB-STYLE FAILURE RATE (AGE SEGMENTS)
+###############################################
+# Split production into segments (early → mid → late)
+
+n_segments <- 10
+
+bathtub <- batch %>%
+  filter(!is.na(fail_rate)) %>%
+  mutate(age_segment = ntile(batch_index, n_segments)) %>%
+  group_by(age_segment) %>%
+  summarise(
+    mean_fail_rate = mean(fail_rate, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+cat("\nBathtub-style segment summary:\n")
+print(bathtub)
+
+p_bathtub <- ggplot(bathtub, aes(x = age_segment, y = mean_fail_rate)) +
+  geom_line() +
+  geom_point() +
+  labs(
+    title = "Bathtub-Style Failure Rate by Production Age Segment",
+    x = "Age segment (early → late production)",
+    y = "Mean failure rate"
+  ) +
+  theme_minimal()
+
+print(p_bathtub)
+
+###############################################
+# 4. FMEA-TYPE SUMMARY (PROCESS STEP / FAILURE MODES)
+###############################################
+# Basic FMEA idea:
+#   - Failure mode ~ combination of Process Step + Special Cause Type
+#   - Occurrence ~ how often defects/defectives happen there
+#   - Severity and Detection often come from experts (we leave as NA or 1–10 placeholders)
+#   - RPN = Severity * Occurrence * Detection (we compute when S, O, D are present)
+
+# Check optional columns and handle if missing
+has_step  <- col_process_step  %in% names(df)
+has_sc    <- col_special_cause %in% names(df)
+has_risk  <- col_risk_score    %in% names(df)
+has_defc  <- col_defects       %in% names(df)
+has_defnp <- col_defectives    %in% names(df)
+has_n     <- col_n_inspected   %in% names(df)
+
+if (!has_step)  warning("Column for Process Step not found: ", col_process_step)
+if (!has_sc)    warning("Column for Special Cause Type not found: ", col_special_cause)
+if (!has_risk)  warning("Column for Risk Score not found: ", col_risk_score)
+
+# Build a base table with only existing fields
+fmea_base <- df
+
+# To avoid errors, only select columns that exist
+safe_cols <- c(
+  if (has_step)  col_process_step  else NULL,
+  if (has_sc)    col_special_cause else NULL,
+  if (has_risk)  col_risk_score    else NULL,
+  if (has_n)     col_n_inspected   else NULL,
+  if (has_defc)  col_defects       else NULL,
+  if (has_defnp) col_defectives    else NULL
+)
+
+fmea_grouped <- fmea_base %>%
+  select(all_of(safe_cols)) %>%
+  mutate(
+    n_val    = if (has_n)     as.numeric(.data[[col_n_inspected]])   else NA_real_,
+    defects  = if (has_defc)  as.numeric(.data[[col_defects]])       else NA_real_,
+    defectives = if (has_defnp) as.numeric(.data[[col_defectives]]) else NA_real_,
+    risk    = if (has_risk)   as.numeric(.data[[col_risk_score]])    else NA_real_
+  )
+
+group_vars <- c(
+  if (has_step) col_process_step else NULL,
+  if (has_sc)   col_special_cause else NULL
+)
+
+if (length(group_vars) == 0) {
+  stop("No grouping columns available for FMEA (need at least Process Step or Special Cause Type).")
+}
+
+fmea <- fmea_grouped %>%
+  group_by(across(all_of(group_vars))) %>%
+  summarise(
+    total_inspected   = if (has_n)     sum(n_val, na.rm = TRUE)       else NA_real_,
+    total_defects     = if (has_defc)  sum(defects, na.rm = TRUE)     else NA_real_,
+    total_defectives  = if (has_defnp) sum(defectives, na.rm = TRUE)  else NA_real_,
+    mean_risk_score   = if (has_risk)  mean(risk, na.rm = TRUE)       else NA_real_,
+    occurrence_rate   = if (has_n && has_defnp && sum(n_val, na.rm = TRUE) > 0)
+      total_defectives / total_inspected
+    else NA_real_,
+    .groups = "drop"
+  )
+
+# Add FMEA columns (Severity, Detection, RPN) as placeholders
+# You or the engineering team can fill Severity and Detection based on risk assessments.
+fmea <- fmea %>%
+  mutate(
+    Severity   = NA_real_,  # fill 1–10 based on effect on patient/use
+    Occurrence = ifelse(!is.na(occurrence_rate),
+                        pmin(10, pmax(1, occurrence_rate * 1000)),  # simple scaling example
+                        NA_real_),
+    Detection  = NA_real_,  # fill 1–10 based on detectability
+    RPN        = ifelse(!is.na(Severity) & !is.na(Occurrence) & !is.na(Detection),
+                        Severity * Occurrence * Detection,
+                        NA_real_)
+  )
+
+cat("\nFMEA-style summary (top rows):\n")
+print(head(fmea, 20))
+
+# Optional: write FMEA summary to CSV
+# write_csv(fmea, "D:/Learning/Immunoassay Project/FMEA_Summary.csv")
+
