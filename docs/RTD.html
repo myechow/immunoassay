@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>tab-home</title>
+<title>rtd – Immunoassay Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,70 +23,258 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="tab home_files/libs/clipboard/clipboard.min.js"></script>
-<script src="tab home_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="tab home_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="tab home_files/libs/quarto-html/popper.min.js"></script>
-<script src="tab home_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="tab home_files/libs/quarto-html/anchor.min.js"></script>
-<link href="tab home_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="tab home_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="tab home_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="tab home_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="tab home_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-991b1886d3c685c7aa2b62b80640c7af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
-<main class="content" id="quarto-document-content">
-
-
-
-
-<section id="product-introduction" class="level3">
-<h3 class="anchored" data-anchor-id="product-introduction">Product Introduction</h3>
-<p>Modern immunoassay labs expect IVD systems that behave like well-managed assets over their entire life cycle: a short “shake-out” phase, a long period of stable performance, and a controlled wear-out phase. In practice, many ELISA platforms never reach that stable, low-failure plateau because early manufacturing variation in temperature, pH, and optical density creates a spike of early defects and service calls—the classic “infant mortality” region of the bathtub curve. This project tackles that risk by integrating Pt100 Class A RTD sensors, structured SPC, and a digital twin into the ELISA manufacturing workflow so that critical-to-quality parameters (CTQs) such as temperature, pH, OD and defect rate are measured, trended, and acted on from the first validation lot onward.</p>
-<p>Within a Quality 5.0 and Industry 4.0 mindset, the project treats data as the backbone of business process management. Real-time sensor data, batch-level defect statistics, and special-cause signals are used to shape decisions about process settings, maintenance, training, and release. My goal is to demonstrate that disciplined quality engineering—CTQ definition, SPC, reliability curves, and FMEA—can systematically push the process out of the “high early failure” region of the bathtub curve and into a predictable, low-risk operating mode. The work is structured like a formal project: clear charter and scope, defined stakeholders and responsibilities, transparent risk logic, and documented controls, so that a CQE could defend the strategy to both management and regulators with confidence.</p>
-</section>
-<section id="key-controls-in-this-project" class="level3">
-<h3 class="anchored" data-anchor-id="key-controls-in-this-project">Key Controls in This Project</h3>
-<ul>
-<li><strong>SPC charts for CTQs</strong></li>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Immunoassay Analysis</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./RTD.html" aria-current="page"> 
+<span class="menu-text">RTD Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./tab-home.qmd"> 
+<span class="menu-text">Dashboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./dissertation_intro.html"> 
+<span class="menu-text">Introduction</span></a>
+  </li>  
 </ul>
-<pre><code>-   Attribute charts for defects and defectives: **p, np, c, u.**
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
--   Variable charts for sensor and assay data: **X̄–R, X̄–S, I–MR.**</code></pre>
-<ul>
-<li><strong>Reliability analysis based on batch defectives</strong></li>
-</ul>
-<pre><code>    -   Batch-wise failure rate derived from `n Inspected` and `Defectives (np).`
 
-    -   Approximate reliability and bathtub-style curves over production “age”.</code></pre>
-<ul>
-<li><strong>FMEA summary by process step and special cause</strong></li>
-</ul>
-<pre><code>-    Failure modes defined by `Process Step` and `Special Cause Type.`
 
--    Data-informed occurrence estimates; clear links to controls and monitoring.</code></pre>
-<ul>
-<li><strong>Risk score and CAPA trigger logic</strong></li>
-</ul>
-<pre><code>-   Use of `Risk Score`, SPC signals, and anomaly flags to prioritize issues.
 
--   Explicit rules for when to recommend CAPA, escalation, or design/process review</code></pre>
+<section id="resistance-temperature-detector" class="level3">
+<h3 class="anchored" data-anchor-id="resistance-temperature-detector">Resistance Temperature Detector</h3>
+<p>An RTD is a passive sensor that does not generate its own signal. It requires an external circuit to pass a small current through it to measure its resistance, which is then converted into a temperature reading. In the context of Industry 4.0, RTDs are often integrated with transmitters that convert the resistance measurement into a digital or standardized signal, such as 4-20 mA. This functionality allows RTDs to operate as smart sensors, making them easily usable in control systems and the Internet of Things (IoT).</p>
+<p>RTDs are appreciated for their high precision, accuracy, stability, and repeatability across a moderate temperature range. By providing reliable temperature data, RTDs are essential for “smart” applications in smart manufacturing, including process optimization, predictive maintenance, and enhanced product quality. These applications are core concepts of Industry 4.0.</p>
 <hr>
 </section>
-<section id="r-shiny-app-for-spc-visualization" class="level3">
-<h3 class="anchored" data-anchor-id="r-shiny-app-for-spc-visualization">R Shiny App for SPC Visualization</h3>
-<p><a href="https://mye-chow.shinyapps.io/Immunoassay/">Shiny App</a></p>
+<section id="real-world-use-case-rtds-in-elisa-manufacturing" class="level3">
+<h3 class="anchored" data-anchor-id="real-world-use-case-rtds-in-elisa-manufacturing">Real-World Use Case: RTDs in ELISA Manufacturing:</h3>
+<ol type="1">
+<li>Process: Monitoring thermal incubation chambers (37°C ± 0.5°C).</li>
+<li>RTD Type: GMP-validated Pt100 probe with HART interface.</li>
+<li>IoT Output: Sent to digital twin for real-time control and risk flagging.</li>
+<li>Compliance: Meets FDA 21 CFR Part 11, ISO 13485, and Annex XI of IVDR.</li>
+</ol>
+<hr>
+</section>
+<section id="iot-ecosystem-for-rtds-in-industry-4.0" class="level3">
+<h3 class="anchored" data-anchor-id="iot-ecosystem-for-rtds-in-industry-4.0">IoT Ecosystem for RTDs in Industry 4.0</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Component</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="even">
+<td>RTD Sensor</td>
+<td>Measures temperature with high accuracy (Pt100)</td>
+</tr>
+<tr class="odd">
+<td>Transmitter</td>
+<td>Converts resistance signal to digital (Modbus, HART, IO-Link)</td>
+</tr>
+<tr class="even">
+<td>Edge Gateway</td>
+<td>Collects data from multiple RTDs and pushes to cloud (e.g., via QTT/TLS)</td>
+</tr>
+<tr class="odd">
+<td>Cloud Platform</td>
+<td>Stores time-series data, alerts, triggers CAPA or deviation reports</td>
+</tr>
+<tr class="even">
+<td>MES/QMS Interface</td>
+<td>Syncs batch data with eQMS for documentation and audit readiness</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="realistic-rtd-types-in-iot-enabled-manufacturing-industry-4.0" class="level3">
+<h3 class="anchored" data-anchor-id="realistic-rtd-types-in-iot-enabled-manufacturing-industry-4.0">Realistic RTD Types in IoT-Enabled Manufacturing (Industry 4.0)</h3>
+<ol type="1">
+<li><p>Pt100 Class A RTD Sensor (Probe Type): Appearance: Stainless steel sheath with a cylindrical tip and cable/connector head. Features: Platinum resistance element (100 ohms at 0°C), Class A accuracy per IEC 60751 (±0.15 °C at 0°C), GMP-compliant for pharmaceutical/IVD environments. Common Applications: Bioreactors, incubators, filling lines.</p></li>
+<li><p>RTD with Integrated Transmitter (4–20 mA Output):</p></li>
+</ol>
+<p>Appearance: Probe with a compact head containing electronics. Features: Converts temperature signal into industrial current loop (4–20 mA), Often HART or IO-Link enabled, Factory-calibrated, tamper-proof. IoT Role: Sends calibrated values to an IoT edge gateway, Allows remote diagnostics and calibration alerts. Applications: Endress+Hauser iTEMP TMT, WIKA TR10 series with head transmitter.</p>
+<ol start="3" type="1">
+<li>Surface-Mount RTD Sensor:</li>
+</ol>
+<p>Appearance: Flat foil or patch adhered to external pipe or surface. Use Case: For non-invasive temperature monitoring on tubing or containers. IoT Integration: Often connected via wireless BLE/ZigBee modules, Battery-powered or energy-harvesting units. Advantages are rapid installation, useful for temporary batch verification.</p>
+<ol start="4" type="1">
+<li>Wireless Smart RTD Sensors (Industry 4.0-ready):</li>
+</ol>
+<p>Appearance: Compact unit with wireless antenna. Technology: LoRaWAN, ZigBee, or Wi-Fi enabled and embedded microcontroller + battery. Functionality: Sends data directly to cloud/MES, Used in modular cleanroom setups or retrofitting legacy systems, Vendors: Emerson WirelessHART RTDs, Banner Engineering wireless temperature nodes.</p>
+<hr>
+</section>
+<section id="rtd-comparison-table-for-sop-reference" class="level3">
+<h3 class="anchored" data-anchor-id="rtd-comparison-table-for-sop-reference">RTD Comparison Table (For SOP Reference)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 15%">
+<col style="width: 24%">
+<col style="width: 26%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>RTD Type</strong></td>
+<td><strong>Signal Type</strong></td>
+<td><strong>Accuracy</strong></td>
+<td><strong>IoT Role</strong></td>
+<td><strong>Use Case</strong></td>
+</tr>
+<tr class="even">
+<td>Pt100 Class A Probe</td>
+<td>Resistive (needs transmitter)</td>
+<td>±0.15°C 0°C (IEC 60751)</td>
+<td>High-precision source data for smart systems</td>
+<td>Bioreactors, Incubators</td>
+</tr>
+<tr class="odd">
+<td>RTD w/ Integrated Transmitter</td>
+<td>4–20 mA / HART / IO-Link</td>
+<td>Factory-calibrated (Class A)</td>
+<td>Direct integration to edge gateways/MES</td>
+<td>Inline temperature monitoring in production lines</td>
+</tr>
+<tr class="even">
+<td>Surface-Mount RTD</td>
+<td>BLE/ZigBee (wireless)</td>
+<td>±0.3°C typical</td>
+<td>Wireless data from non-invasive installs</td>
+<td>External tubing, containers (non-invasive)</td>
+</tr>
+<tr class="odd">
+<td>Wireless Smart RTD</td>
+<td>LoRaWAN / ZigBee / Wi-Fi</td>
+<td>±0.5°C depending on model</td>
+<td>Modular cleanroom integration, legacy retrofit</td>
+<td>Cleanrooms, mobile systems, remote validation</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="rtd-to-iot-integration-process-flow" class="level3">
+<h3 class="anchored" data-anchor-id="rtd-to-iot-integration-process-flow">RTD to IoT Integration Process Flow</h3>
+<p>This diagram illustrates the typical data flow from a Resistance Temperature Detector (RTD) through IoT-connected systems in an Industry 4.0 environment. It supports traceability, real-time monitoring, and compliance with regulatory requirements in medical device and IVD manufacturing.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 18%">
+<col style="width: 19%">
+<col style="width: 17%">
+<col style="width: 20%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>RTD Sensor<br>
+(Temperature Detection)</strong></td>
+<td><strong>Signal Transmitter<br>
+(HART / IO-Link)</strong></td>
+<td><strong>Edge Gateway<br>
+(Local Preprocessing)</strong></td>
+<td><strong>Cloud Platform<br>
+(Storage &amp; Alerts)</strong></td>
+<td><strong>MES / QMS<br>
+(Quality &amp; Compliance)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>–&gt; Flow Diagram: Left to Right.</p>
+
+
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -487,6 +675,19 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Immunoassay Research Group</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
 
 
 
