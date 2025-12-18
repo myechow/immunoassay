@@ -116,8 +116,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#standard-operating-procedure-sop" id="toc-standard-operating-procedure-sop" class="nav-link active" data-scroll-target="#standard-operating-procedure-sop">Standard Operating Procedure (SOP)</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -147,45 +153,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="product-introduction" class="level3">
-<h3 class="anchored" data-anchor-id="product-introduction">Product Introduction</h3>
-<p>Modern immunoassay labs expect IVD systems that behave like well-managed assets over their entire life cycle: a short “shake-out” phase, a long period of stable performance, and a controlled wear-out phase. In practice, many ELISA platforms never reach that stable, low-failure plateau because early manufacturing variation in temperature, pH, and optical density creates a spike of early defects and service calls—the classic “infant mortality” region of the bathtub curve. This project tackles that risk by integrating Pt100 Class A RTD sensors, structured SPC, and a digital twin into the ELISA manufacturing workflow so that critical-to-quality parameters (CTQs) such as temperature, pH, OD and defect rate are measured, trended, and acted on from the first validation lot onward.</p>
-<p>Within a Quality 5.0 and Industry 4.0 mindset, the project treats data as the backbone of business process management. Real-time sensor data, batch-level defect statistics, and special-cause signals are used to shape decisions about process settings, maintenance, training, and release. My goal is to demonstrate that disciplined quality engineering—CTQ definition, SPC, reliability curves, and FMEA—can systematically push the process out of the “high early failure” region of the bathtub curve and into a predictable, low-risk operating mode. The work is structured like a formal project: clear charter and scope, defined stakeholders and responsibilities, transparent risk logic, and documented controls, so that a CQE could defend the strategy to both management and regulators with confidence.</p>
-</section>
-<section id="key-controls-in-this-project" class="level3">
-<h3 class="anchored" data-anchor-id="key-controls-in-this-project">Key Controls in This Project</h3>
-<ul>
-<li><p><strong>SPC charts for CTQs</strong></p>
-<p>[Statistical Process Control(SPC%20Charts.xlsx)](SPC Charts.xlsx)</p></li>
-</ul>
-<pre><code>-   Attribute charts for defects and defectives: **p, np, c, u.**
-
--   Variable charts for sensor and assay data: **X̄–R, X̄–S, I–MR.**</code></pre>
-<ul>
-<li><strong>Reliability analysis based on batch defectives</strong></li>
-</ul>
-<pre><code>    -   Batch-wise failure rate derived from `n Inspected` and `Defectives (np).`
-
-    -   Approximate reliability and bathtub-style curves over production “age”.</code></pre>
-<ul>
-<li><strong>FMEA summary by process step and special cause</strong></li>
-</ul>
-<pre><code>-    Failure modes defined by `Process Step` and `Special Cause Type.`
-
--    Data-informed occurrence estimates; clear links to controls and monitoring.</code></pre>
-<ul>
-<li><strong>Risk score and CAPA trigger logic</strong></li>
-</ul>
-<pre><code>-   Use of `Risk Score`, SPC signals, and anomaly flags to prioritize issues.
-
--   Explicit rules for when to recommend CAPA, escalation, or design/process review</code></pre>
+<section id="standard-operating-procedure-sop" class="level2">
+<h2 class="anchored" data-anchor-id="standard-operating-procedure-sop">Standard Operating Procedure (SOP)</h2>
+<p><strong>Title:</strong> Comprehensive SOP – Smart Quality Integration and Immunoassay Batch Monitoring</p>
+<p><strong>SOP ID</strong>: COMP-SOP-2025</p>
+<p><strong>Effective Date</strong>: 18DEC2025.</p>
+<p><strong>Digital Quality Systems and Technical Writing Reviewed and Approved By</strong>: MCI. Version: 1.0.</p>
 <hr>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">1.0 Background</h3>
+<p>This SOP defines a unified framework for smart quality control and immunoassay batch monitoring using RTD sensors, IoT-enabled infrastructure, and digital twins in a regulated in vitro diagnostic (IVD) manufacturing setting. It supports ELISA-based assays used in clinical detection of proinflammatory biomarkers such as IL-6 and TNF-α. The devices are FDA-cleared under 510(k), CE-marked under IVDR, and distributed internationally.</p>
 </section>
-<section id="r-shiny-app-for-spc-visualization" class="level3">
-<h3 class="anchored" data-anchor-id="r-shiny-app-for-spc-visualization">R Shiny App for SPC Visualization</h3>
-<p><a href="https://mye-chow.shinyapps.io/Immunoassay/">Shiny App</a></p>
+<section id="purpose" class="level3">
+<h3 class="anchored" data-anchor-id="purpose">2.0 Purpose</h3>
+<p>To ensure regulatory-aligned, real-time quality monitoring of IVD production using automated sensing, data validation, and digital risk control systems. This SOP is designed to comply with FDA (21 CFR Part 820, 11, 801, 807, 830), ISO 13485:2016, ISO 14971:2019, and ASQ quality principles.</p>
+</section>
+<section id="scope" class="level3">
+<h3 class="anchored" data-anchor-id="scope">3.0 Scope</h3>
+<p>Applies to U.S.-based manufacturing operations of ELISA-based IVD devices utilizing digital twin simulations, GMP-compliant RTD sensors, MES platforms, and audit-ready documentation practices. Covers regulatory, engineering, and QA documentation roles.</p>
+</section>
+<section id="responsibilities" class="level3">
+<h3 class="anchored" data-anchor-id="responsibilities">4.0 Responsibilities</h3>
+<p>• Regulatory Affairs: Maintain regulatory filings, compliance matrices, UDI, and labeling controls. • Quality Assurance: Execute validation, risk management, CAPA, and internal audit processes. • Engineering: Implement RTD and sensor technologies into production workflows. • IT/Data Governance: Ensure secure, auditable data flows and version tracking. • Documentation: Create, control, and update technical and training materials.</p>
+</section>
+<section id="digital-twin-and-iot-integration" class="level3">
+<h3 class="anchored" data-anchor-id="digital-twin-and-iot-integration">5.0 Digital Twin and IoT Integration</h3>
+<p>Real-time bioreactor environments are monitored with Pt100 Class A RTDs (±0.15°C), auto-calibrated pH probes, and photo-optical OD sensors. Data is encrypted and streamed via MQTT/TLS to MES, processed through edge gateways, and stored in validated 21 CFR Part 11-compliant systems. This supports anomaly detection, automated alerts, traceability, and early-stage deviation control.</p>
+</section>
+<section id="procedure-overview" class="level3">
+<h3 class="anchored" data-anchor-id="procedure-overview">6.0 Procedure Overview</h3>
+<p>• Continuously monitor temperature, pH, and OD from ELISA batch reactors using validated RTDs and sensors. • Sync sensor data with MES using secure IoT protocols for time-stamped audit logging. • Trigger anomaly detection and CAPA initiation when risk thresholds are breached. • Use digital twins to simulate manufacturing environments for validation and predictive maintenance. • Store records and technical files in compliance with 21 CFR Part 11 and ISO 13485 traceability principles.</p>
+</section>
+<section id="regulatory-compliance-matrix" class="level3">
+<h3 class="anchored" data-anchor-id="regulatory-compliance-matrix">7.0 Regulatory Compliance Matrix</h3>
+<p>• 21 CFR Part 820: Design controls, process validation, device history records, CAPA • 21 CFR Part 11: Electronic records, signatures, audit trails • 21 CFR Part 801: Device labeling and traceability • 21 CFR Part 807: Device registration and listing • 21 CFR Part 830: Unique Device Identification (UDI) • ISO 9001:2015: Quality improvement, risk-based process management • ISO 13485:2016: QMS for medical devices and technical documentation • ISO 14971:2019: Risk management for safety and effectiveness • ASQ principles: Continuous improvement, defect prevention, process capability</p>
+</section>
+<section id="deliverables-and-validation" class="level3">
+<h3 class="anchored" data-anchor-id="deliverables-and-validation">8.0 Deliverables and Validation</h3>
+<p>• SOPs and QMS documentation aligned with U.S. and international regulations • Fully traceable, editable batch and sensor records • Risk scoring dashboards and alert systems for deviation control • Integration of sensor data with MES/QMS for digital audit readiness • Validated documentation workflows for FDA and ISO audits</p>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">9.0 References</h3>
+<p>• FDA 21 CFR Parts 11, 801, 807, 820, 830 • ISO 9001:2015 • ISO 13485:2016 • ISO 14971:2019 • ASQ Quality Body of Knowledge (QBOK) • Digital Twin and IoT Integration Guidelines</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
