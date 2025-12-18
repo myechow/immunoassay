@@ -1,5 +1,5 @@
 ---
-title: "All About Resistance Temperature Detector"
+title: "RTD Overview"
 author: "Myesha Iqbal"
 editor: visual
 ---
@@ -23,14 +23,19 @@ RTDs are appreciated for their high precision, accuracy, stability, and repeatab
 
 ### IoT Ecosystem for RTDs in Industry 4.0
 
-|  |  |
-|----|----|
-| **Component** | **Description** |
-| RTD Sensor | Measures temperature with high accuracy (Pt100) |
-| Transmitter | Converts resistance signal to digital (Modbus, HART, IO-Link) |
-| Edge Gateway | Collects data from multiple RTDs and pushes to cloud (e.g., via QTT/TLS) |
-| Cloud Platform | Stores time-series data, alerts, triggers CAPA or deviation reports |
-| MES/QMS Interface | Syncs batch data with eQMS for documentation and audit readiness |
++----------------------------------+--------------------------------------------------------------------------+
+| **Component**                    | **Description**                                                          |
++----------------------------------+--------------------------------------------------------------------------+
+| RTD Sensor                       | Measures temperature with high accuracy (Pt100)                          |
++----------------------------------+--------------------------------------------------------------------------+
+| Transmitter                      | Converts resistance signal to digital (Modbus, HART, IO-Link)            |
++----------------------------------+--------------------------------------------------------------------------+
+| Edge Gateway                     | Collects data from multiple RTDs and pushes to cloud (e.g., via QTT/TLS) |
++----------------------------------+--------------------------------------------------------------------------+
+| Cloud Platform                   | Stores time-series data, alerts, triggers CAPA or deviation reports      |
++----------------------------------+--------------------------------------------------------------------------+
+| MES/QMS Interface                | Syncs batch data with eQMS for documentation and audit readiness         |
++----------------------------------+--------------------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 
@@ -54,13 +59,17 @@ Appearance: Compact unit with wireless antenna. Technology: LoRaWAN, ZigBee, or 
 
 ### RTD Comparison Table (For SOP Reference)
 
-|  |  |  |  |  |
-|----|----|----|----|----|
-| **RTD Type** | **Signal Type** | **Accuracy** | **IoT Role** | **Use Case** |
-| Pt100 Class A Probe | Resistive (needs transmitter) | ±0.15°C 0°C (IEC 60751) | High-precision source data for smart systems | Bioreactors, Incubators |
-| RTD w/ Integrated Transmitter | 4–20 mA / HART / IO-Link | Factory-calibrated (Class A) | Direct integration to edge gateways/MES | Inline temperature monitoring in production lines |
-| Surface-Mount RTD | BLE/ZigBee (wireless) | ±0.3°C typical | Wireless data from non-invasive installs | External tubing, containers (non-invasive) |
-| Wireless Smart RTD | LoRaWAN / ZigBee / Wi-Fi | ±0.5°C depending on model | Modular cleanroom integration, legacy retrofit | Cleanrooms, mobile systems, remote validation |
++-------------------------------+-------------------------------+------------------------------+------------------------------------------------+---------------------------------------------------+
+| **RTD Type**                  | **Signal Type**               | **Accuracy**                 | **IoT Role**                                   | **Use Case**                                      |
++-------------------------------+-------------------------------+------------------------------+------------------------------------------------+---------------------------------------------------+
+| Pt100 Class A Probe           | Resistive (needs transmitter) | ±0.15°C 0°C (IEC 60751)      | High-precision source data for smart systems   | Bioreactors, Incubators                           |
++-------------------------------+-------------------------------+------------------------------+------------------------------------------------+---------------------------------------------------+
+| RTD w/ Integrated Transmitter | 4–20 mA / HART / IO-Link      | Factory-calibrated (Class A) | Direct integration to edge gateways/MES        | Inline temperature monitoring in production lines |
++-------------------------------+-------------------------------+------------------------------+------------------------------------------------+---------------------------------------------------+
+| Surface-Mount RTD             | BLE/ZigBee (wireless)         | ±0.3°C typical               | Wireless data from non-invasive installs       | External tubing, containers (non-invasive)        |
++-------------------------------+-------------------------------+------------------------------+------------------------------------------------+---------------------------------------------------+
+| Wireless Smart RTD            | LoRaWAN / ZigBee / Wi-Fi      | ±0.5°C depending on model    | Modular cleanroom integration, legacy retrofit | Cleanrooms, mobile systems, remote validation     |
++-------------------------------+-------------------------------+------------------------------+------------------------------------------------+---------------------------------------------------+
 
 ------------------------------------------------------------------------
 
