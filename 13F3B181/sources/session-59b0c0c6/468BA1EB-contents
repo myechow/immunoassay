@@ -1,3 +1,9 @@
+---
+title: "All About Resistance Temperature Detector"
+author: "Myesha Iqbal"
+editor: visual
+---
+
 ### Resistance Temperature Detector
 
 An RTD is a passive sensor that does not generate its own signal. It requires an external circuit to pass a small current through it to measure its resistance, which is then converted into a temperature reading. In the context of Industry 4.0, RTDs are often integrated with transmitters that convert the resistance measurement into a digital or standardized signal, such as 4-20 mA. This functionality allows RTDs to operate as smart sensors, making them easily usable in control systems and the Internet of Things (IoT).
@@ -17,19 +23,19 @@ RTDs are appreciated for their high precision, accuracy, stability, and repeatab
 
 ### IoT Ecosystem for RTDs in Industry 4.0
 
-+----------------------------------+--------------------------------------------------------------------------+
-| **Component**                    | **Description**                                                          |
-+----------------------------------+--------------------------------------------------------------------------+
-| RTD Sensor                       | Measures temperature with high accuracy (Pt100)                          |
-+----------------------------------+--------------------------------------------------------------------------+
-| Transmitter                      | Converts resistance signal to digital (Modbus, HART, IO-Link)            |
-+----------------------------------+--------------------------------------------------------------------------+
-| Edge Gateway                     | Collects data from multiple RTDs and pushes to cloud (e.g., via QTT/TLS) |
-+----------------------------------+--------------------------------------------------------------------------+
-| Cloud Platform                   | Stores time-series data, alerts, triggers CAPA or deviation reports      |
-+----------------------------------+--------------------------------------------------------------------------+
-| MES/QMS Interface                | Syncs batch data with eQMS for documentation and audit readiness         |
-+----------------------------------+--------------------------------------------------------------------------+
++---------------------+--------------------------------------------------------------------------+
+| **Component**       | **Description**                                                          |
++---------------------+--------------------------------------------------------------------------+
+| RTD Sensor          | Measures temperature with high accuracy (Pt100)                          |
++---------------------+--------------------------------------------------------------------------+
+| Transmitter         | Converts resistance signal to digital (Modbus, HART, IO-Link)            |
++---------------------+--------------------------------------------------------------------------+
+| Edge Gateway        | Collects data from multiple RTDs and pushes to cloud (e.g., via QTT/TLS) |
++---------------------+--------------------------------------------------------------------------+
+| Cloud Platform      | Stores time-series data, alerts, triggers CAPA or deviation reports      |
++---------------------+--------------------------------------------------------------------------+
+| MES/QMS Interface   | Syncs batch data with eQMS for documentation and audit readiness         |
++---------------------+--------------------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 

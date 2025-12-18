@@ -1,3 +1,9 @@
+---
+title: "Detailed Introduction"
+author: "Myesha Iqbal"
+editor: visual
+---
+
 ## Dissertation Style Introduction
 
 1.1. Background of ELISA-Based In Vitro Diagnostics (IVDs)

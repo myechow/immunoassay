@@ -1,3 +1,9 @@
+---
+title: "Home"
+author: "Myesha Iqbal"
+editor: visual
+---
+
 ### Product Introduction
 
 Modern immunoassay labs expect IVD systems that behave like well-managed assets over their entire life cycle: a short “shake-out” phase, a long period of stable performance, and a controlled wear-out phase. In practice, many ELISA platforms never reach that stable, low-failure plateau because early manufacturing variation in temperature, pH, and optical density creates a spike of early defects and service calls—the classic “infant mortality” region of the bathtub curve. This project tackles that risk by integrating Pt100 Class A RTD sensors, structured SPC, and a digital twin into the ELISA manufacturing workflow so that critical-to-quality parameters (CTQs) such as temperature, pH, OD and defect rate are measured, trended, and acted on from the first validation lot onward.
