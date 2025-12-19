@@ -1,9 +1,3 @@
-#DATASET_PATH <- "Medical_Device_Manufacturing_Dataset.csv"
-# app.R – SPC Shiny app
-# Works with: Medical_Device_Manufacturing_Dataset_20k_SPC.csv
-# Control limits = black dotted
-# Spec limits    = red dotted
-
 library(shiny)
 library(readr)
 library(dplyr)
@@ -11,7 +5,7 @@ library(ggplot2)
 library(bslib)
 library(grid)
 
-DATASET_PATH <- "Medical_Device_Manufacturing_Dataset.csv"
+path <- "Medical_Device_Manufacturing_Dataset.csv"
 
 # SPC constants for subgroup size n (2–10)
 K <- list(
@@ -29,7 +23,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       tags$b("Dataset:"),
-      tags$code(DATASET_PATH),
+      tags$code(path),
       hr(),
       selectInput("chart", "Chart type",
                   choices = c("p", "np", "c", "u", "Xbar-R", "Xbar-S", "I-MR"),
@@ -52,14 +46,13 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
   
-  # ---- Load data once ----
+ 
   df <- reactive({
-    validate(need(file.exists(DATASET_PATH),
-                  paste("CSV not found at:", DATASET_PATH)))
-    d <- readr::read_csv(DATASET_PATH, show_col_types = FALSE)
+    validate(need(file.exists(path),
+                  paste("CSV not found at:", path)))
+    d <- readr::read_csv(path, show_col_types = FALSE)
     
-    # Parse Timestamp safely
-    if ("Timestamp" %in% names(d)) {
+       if ("Timestamp" %in% names(d)) {     # Parsing Timestamp
       ts <- d$Timestamp
       d$Timestamp <- as.POSIXct(ts, format = "%Y-%m-%dT%H:%M:%S", tz = "UTC")
       bad <- is.na(d$Timestamp)
@@ -74,8 +67,7 @@ server <- function(input, output, session) {
     head(df(), 10)
   })
   
-  # ---- Simple messages about data health ----
-  output$msg <- renderText({
+   output$msg <- renderText({
     d <- df()
     msgs <- c()
     
@@ -95,7 +87,7 @@ server <- function(input, output, session) {
     if (length(msgs) == 0) "No major issues found." else paste(msgs, collapse = "\n")
   })
   
-  # ---- Build selectors based on dataset ----
+ 
   output$selectors <- renderUI({
     d <- df()
     cols <- names(d)
@@ -105,7 +97,7 @@ server <- function(input, output, session) {
       selectInput("time_col", "Time / order column", cols,
                   selected = if ("Timestamp" %in% cols) "Timestamp" else cols[1]),
       
-      # Attribute charts
+     
       conditionalPanel(
         condition = "input.chart == 'p' || input.chart == 'np' || input.chart == 'c' || input.chart == 'u'",
         selectInput("batch_col", "Batch / group column", cols,
@@ -129,7 +121,7 @@ server <- function(input, output, session) {
         )
       ),
       
-      # Variable charts: subgroup + measurement
+    
       conditionalPanel(
         condition = "input.chart == 'Xbar-R' || input.chart == 'Xbar-S'",
         selectInput("subgroup_col", "Subgroup column", cols,
@@ -138,7 +130,6 @@ server <- function(input, output, session) {
                     selected = if ("RTD Temperature (C)" %in% num_cols) "RTD Temperature (C)" else num_cols[1])
       ),
       
-      # I-MR
       conditionalPanel(
         condition = "input.chart == 'I-MR'",
         selectInput("i_col", "Measurement (numeric)", num_cols,
@@ -147,7 +138,7 @@ server <- function(input, output, session) {
     )
   })
   
-  # ---- Main SPC plot ----
+
   output$spc <- renderPlot({
     d <- df()
     
@@ -161,12 +152,12 @@ server <- function(input, output, session) {
     usl <- input$usl
     lsl <- input$lsl
     
-    # ---------- ATTRIBUTE CHARTS ----------
+  
     if (input$chart %in% c("p", "np", "c", "u")) {
       validate(need(input$batch_col %in% names(d), "Pick a valid batch/group column."))
       
-      # Summarise by batch
-      g <- d %>%
+      
+      g <- d %>%     # Summarise by batch
         group_by(.data[[input$batch_col]]) %>%
         summarise(
           x = min(time_x, na.rm = TRUE),
@@ -273,10 +264,10 @@ server <- function(input, output, session) {
       }
     }
     
-    # ---------- Xbar-R / Xbar-S ----------
+   
     if (input$chart %in% c("Xbar-R", "Xbar-S")) {
       validate(need(input$subgroup_col %in% names(d), "Pick a valid subgroup column."))
-      validate(need(input$x_col %in% names(d), "Pick a valid numeric measurement column."))
+      validate(need(input$x_col %in% names(d), "Pick a valid numeric measurement column."))  # Xbar-R / Xbar-S
       
       g <- d %>%
         group_by(.data[[input$subgroup_col]]) %>%
@@ -354,7 +345,6 @@ server <- function(input, output, session) {
           theme_minimal()
       }
       
-      # Draw the two plots one above the other
       grid.newpage()
       lay <- grid.layout(2, 1, heights = unit(c(2, 1.3), "null"))
       pushViewport(viewport(layout = lay))
@@ -364,9 +354,9 @@ server <- function(input, output, session) {
       return(invisible())
     }
     
-    # ---------- I-MR ----------
+
     if (input$chart == "I-MR") {
-      validate(need(input$i_col %in% names(d), "Pick a valid numeric measurement column."))
+      validate(need(input$i_col %in% names(d), "Pick a valid numeric measurement column."))  # I-MR
       
       xdat <- d %>%
         transmute(x = time_x, y = as.numeric(.data[[input$i_col]])) %>%

@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Myesha Iqbal">
 
 <title>Immunoassay Project – Immunoassay Analysis</title>
 <style>
@@ -90,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Product Overview</span></a>
+<span class="menu-text">Immunoassay Project</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./RTD.html"> 
@@ -103,6 +104,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./process.html"> 
 <span class="menu-text">Product Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project.html"> 
+<span class="menu-text">Project Overview</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -136,6 +141,12 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Myesha Iqbal </p>
+          </div>
+  </div>
     
   
     
@@ -148,55 +159,18 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="welcome-to-the-immunoassay-analysis-portal" class="level1">
 <h1>Welcome to the Immunoassay Analysis Portal</h1>
-<p>This portal hosts:</p>
+<p>This portal hosts detailed information regarding a mock Medical Device Manufacturing Quality 5.0 industry setup:</p>
 <ul>
-<li>RTD Analysis</li>
-<li>Project Dashboards</li>
-<li>Literature + SOP Documentation</li>
-<li>Dissertation Sections</li>
+<li>Resistance Temperature Detectors (RTD) in manufacturing.</li>
+<li>ELISA-Based In Vitro Diagnostics (IVDs) use and mechanics.</li>
+<li>Mock SOP Documentation</li>
+<li>Dissertation Style Product Overview with References</li>
 </ul>
-<p>Use the navbar to navigate between pages.</p>
+<p>This comprehensive project incorporates: Regulation/Standard Project Alignment ISO 9001:2015 Process control, Risk Management, Documentation, improvement ISO 13485:2016 Medical device QMS, regulatory traceability, product lifecycle focus 21 CFR Part 820 Production control, process validation, CAPA system 21 CFR Part 11 Electronic records, audit trails, data integrity</p>
+<p>Use the navigation bar to navigate between pages.</p>
 <hr>
-<section id="product-introduction" class="level3">
-<h3 class="anchored" data-anchor-id="product-introduction">Product Introduction</h3>
-<p>Modern immunoassay labs expect IVD systems that behave like well-managed assets over their entire life cycle: a short “shake-out” phase, a long period of stable performance, and a controlled wear-out phase. In practice, many ELISA platforms never reach that stable, low-failure plateau because early manufacturing variation in temperature, pH, and optical density creates a spike of early defects and service calls—the classic “infant mortality” region of the bathtub curve. This project tackles that risk by integrating Pt100 Class A RTD sensors, structured SPC, and a digital twin into the ELISA manufacturing workflow so that critical-to-quality parameters (CTQs) such as temperature, pH, OD and defect rate are measured, trended, and acted on from the first validation lot onward.</p>
-<p>Within a Quality 5.0 and Industry 4.0 mindset, the project treats data as the backbone of business process management. Real-time sensor data, batch-level defect statistics, and special-cause signals are used to shape decisions about process settings, maintenance, training, and release. My goal is to demonstrate that disciplined quality engineering—CTQ definition, SPC, reliability curves, and FMEA—can systematically push the process out of the “high early failure” region of the bathtub curve and into a predictable, low-risk operating mode. The work is structured like a formal project: clear charter and scope, defined stakeholders and responsibilities, transparent risk logic, and documented controls, so that a CQE could defend the strategy to both management and regulators with confidence.</p>
-</section>
-<section id="key-controls-in-this-project" class="level3">
-<h3 class="anchored" data-anchor-id="key-controls-in-this-project">Key Controls in This Project</h3>
-<ul>
-<li><p><strong>SPC charts for CTQs</strong></p>
-<p>[Statistical Process Control(SPC%20Charts.xlsx)](SPC Charts.xlsx)</p></li>
-</ul>
-<pre><code>-   Attribute charts for defects and defectives: **p, np, c, u.**
-
--   Variable charts for sensor and assay data: **X̄–R, X̄–S, I–MR.**</code></pre>
-<ul>
-<li><strong>Reliability analysis based on batch defectives</strong></li>
-</ul>
-<pre><code>    -   Batch-wise failure rate derived from `n Inspected` and `Defectives (np).`
-
-    -   Approximate reliability and bathtub-style curves over production “age”.</code></pre>
-<ul>
-<li><strong>FMEA summary by process step and special cause</strong></li>
-</ul>
-<pre><code>-    Failure modes defined by `Process Step` and `Special Cause Type.`
-
--    Data-informed occurrence estimates; clear links to controls and monitoring.</code></pre>
-<ul>
-<li><strong>Risk score and CAPA trigger logic</strong></li>
-</ul>
-<pre><code>-   Use of `Risk Score`, SPC signals, and anomaly flags to prioritize issues.
-
--   Explicit rules for when to recommend CAPA, escalation, or design/process review</code></pre>
-<hr>
-</section>
-<section id="r-shiny-app-for-spc-visualization" class="level3">
-<h3 class="anchored" data-anchor-id="r-shiny-app-for-spc-visualization">R Shiny App for SPC Visualization</h3>
-<p><a href="https://mye-chow.shinyapps.io/Immunoassay/">Shiny App</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -272,7 +246,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/myechow\.github\.io\/immunoassay\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
