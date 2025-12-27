@@ -3,7 +3,7 @@
     "path": "D:/Learning/Immunoassay Project/sop.qmd",
     "project_path": "sop.qmd",
     "type": "quarto_markdown",
-    "hash": "660305683",
+    "hash": "540100945",
     "contents": "",
     "dirty": false,
     "created": 1765996403745.0,
@@ -19,14 +19,14 @@
         "scrollLine": "0",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "353:0"
+        "rmdVisualModeLocation": "2271:1083.3333740234375"
     },
     "folds": "",
-    "lastKnownWriteTime": 1766093538,
+    "lastKnownWriteTime": 1766853440,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1766093536885,
+    "last_content_update": 1766853438923,
     "read_only": false,
     "read_only_alternatives": []
 }

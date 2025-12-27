@@ -1,0 +1,7 @@
+Create linked SOPs:
+
+RTD Calibration & Metrology SOP (820.72)
+
+Software Validation / CSV SOP (Part 11)
+
+Digital Twin Validation Protocol (IQ/OQ/PQ aligned)
